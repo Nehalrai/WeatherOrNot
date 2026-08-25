@@ -26,10 +26,29 @@ class EVResult:
 # reported as "Marginal" rather than a hard Buy/Skip.
 MARGINAL_BAND_FRACTION = 0.20
 
+# How much a traveller's disruption sensitivity stretches or shrinks that band.
+RISK_AVERSION_DEFAULT = 3
+RISK_AVERSION_RANGE = (1, 5)
+RISK_AVERSION_BAND_STEP = 0.2
 
-def compute_ev(probability: float, payout: float, premium: float) -> EVResult:
+
+def _band_multiplier(risk_aversion: int) -> float:
+    """Low tolerance for disruption (5) narrows the marginal band so borderline
+    cases resolve to Buy; high tolerance (1) widens it so they resolve to Skip.
+
+    risk_aversion is clamped to RISK_AVERSION_RANGE: out-of-range values would
+    otherwise drive the multiplier to zero or negative, which silently inverts
+    the Buy/Skip comparison rather than failing.
+    """
+    low, high = RISK_AVERSION_RANGE
+    clamped = max(low, min(high, int(risk_aversion)))
+    return 1 + RISK_AVERSION_BAND_STEP * (RISK_AVERSION_DEFAULT - clamped)
+
+
+def compute_ev(probability: float, payout: float, premium: float,
+               risk_aversion: int = RISK_AVERSION_DEFAULT) -> EVResult:
     ev = probability * payout - premium
-    band = MARGINAL_BAND_FRACTION * premium
+    band = MARGINAL_BAND_FRACTION * premium * _band_multiplier(risk_aversion)
 
     if ev > band:
         verdict = "Buy"
@@ -45,10 +64,23 @@ def compute_ev(probability: float, payout: float, premium: float) -> EVResult:
         )
     else:
         verdict = "Marginal"
-        explanation = (
-            "The expected value is close to break-even. It's a personal call, not a "
-            "clear-cut financial one."
-        )
+        low, high = RISK_AVERSION_RANGE
+        clamped = max(low, min(high, int(risk_aversion)))
+        if clamped >= 4:
+            explanation = (
+                "Given your low tolerance for disruption, leaning toward buying is "
+                "reasonable even at break-even."
+            )
+        elif clamped <= 2:
+            explanation = (
+                "At break-even and with your higher risk tolerance, skipping is "
+                "defensible."
+            )
+        else:
+            explanation = (
+                "The expected value is close to break-even. It's a personal call, not a "
+                "clear-cut financial one."
+            )
 
     return EVResult(
         probability=probability,

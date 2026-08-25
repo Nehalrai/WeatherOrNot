@@ -1,7 +1,7 @@
 """
 WeatherOrNot - real data fetcher.
 
-Pulls two independently-sourced, real datasets and caches them locally so
+Pulls three independently-sourced, real datasets and caches them locally so
 the Streamlit app never has to hit the network:
 
 1. DGCA-sourced national daily on-time-performance by carrier, from the
@@ -13,6 +13,12 @@ the Streamlit app never has to hit the network:
    Open-Meteo Historical Weather API (free, no key, ERA5 reanalysis):
    https://open-meteo.com/en/docs/historical-weather-api
 
+3. The Indian Railways delay dataset (station-level arrival delays for ~7,000
+   trains over a full year), used for zone-level rail disruption rates:
+   https://www.kaggle.com/datasets/rxydenxd/indian-railways-delay-dataset
+   Kaggle requires authentication to download, so this step is manual unless
+   a Kaggle API token is present - instructions are printed at runtime.
+
 Run:
     python scripts/fetch_data.py
 
@@ -23,6 +29,8 @@ data_cache/route_probabilities.json via data_pipeline.py.
 import csv
 import io
 import os
+import shutil
+import subprocess
 import sys
 import time
 from datetime import date
@@ -105,11 +113,80 @@ def fetch_all_weather():
         time.sleep(0.5)  # be polite to the free public API
 
 
+RAIL_DATASET = "rxydenxd/indian-railways-delay-dataset"
+RAIL_FILES = ["combined_delay.csv", "station_full_names.csv", "train_details.csv"]
+
+
+def ensure_rail_delay_dataset():
+    """Make sure the Indian Railways delay dataset is in data_cache/.
+
+    Tries the Kaggle CLI if it's installed and a token is configured; otherwise
+    prints manual download instructions. Returns True if the files are present.
+    """
+    missing = [f for f in RAIL_FILES if not os.path.exists(os.path.join(CACHE_DIR, f))]
+    if not missing:
+        size_gb = os.path.getsize(os.path.join(CACHE_DIR, "combined_delay.csv")) / 1e9
+        print(f"Indian Railways delay dataset already in data_cache "
+              f"(combined_delay.csv {size_gb:.2f} GB) - skipping download.")
+        return True
+
+    print(f"Indian Railways delay dataset missing from data_cache: {', '.join(missing)}")
+    token = os.path.expanduser("~/.kaggle/kaggle.json")
+    if shutil.which("kaggle") and os.path.exists(token):
+        print(f"  Kaggle CLI + token found, downloading {RAIL_DATASET} (~1GB) ...")
+        rc = subprocess.call([
+            "kaggle", "datasets", "download", "-d", RAIL_DATASET,
+            "-p", CACHE_DIR, "--unzip",
+        ])
+        if rc == 0 and not [f for f in RAIL_FILES if not os.path.exists(os.path.join(CACHE_DIR, f))]:
+            print("  done.")
+            return True
+        print(f"  Kaggle CLI exited {rc} and the files still aren't there.")
+
+    print(f"""
+  ---------------------------------------------------------------------
+  MANUAL STEP NEEDED - Kaggle requires a login to download.
+
+  Option A (browser, quickest):
+    1. Open https://www.kaggle.com/datasets/{RAIL_DATASET.split('/')[1]}
+       (full URL: https://www.kaggle.com/datasets/{RAIL_DATASET})
+    2. Sign in, click Download (~1GB zip).
+    3. Unzip it into:
+         {CACHE_DIR}
+       so that these sit directly in that folder:
+         {', '.join(RAIL_FILES)}
+
+  Option B (CLI, if you want re-runs to be automatic):
+    1. Kaggle -> Settings -> API -> "Create New Token" (saves kaggle.json)
+    2. mkdir -p ~/.kaggle && mv ~/Downloads/kaggle.json ~/.kaggle/kaggle.json
+    3. pip install kaggle
+    4. Re-run this script - it will download the dataset for you.
+
+  NOTE: do NOT use a plain `curl` on the Kaggle download API - without auth
+  it returns HTTP 404 and curl will happily save that error page as a .zip.
+
+  Rail probabilities will fall back to the weather proxy until this is done.
+  ---------------------------------------------------------------------
+""")
+    return False
+
+
 def main():
     os.makedirs(CACHE_DIR, exist_ok=True)
     fetch_dgca_otp()
     fetch_weather_evidence_pdf()
     fetch_all_weather()
+    have_rail = ensure_rail_delay_dataset()
+
+    if have_rail:
+        print("\nTraining the rail disruption classifier ...")
+        try:
+            from ml_model import train_rail_model
+            train_rail_model()
+        except Exception as e:  # training is optional - never break the fetch
+            print(f"  WARNING: model training failed ({type(e).__name__}: {e}).")
+            print("  Rail probabilities will use the observed zone rates alone.")
+
     print("\nRebuilding route_probabilities.json from fetched data ...")
     data_pipeline.build()
     print(f"\nDone. Cache refreshed {date.today().isoformat()}.")

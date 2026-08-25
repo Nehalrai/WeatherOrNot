@@ -48,6 +48,15 @@ def monthly_curve(mode_key, origin_code, dest_code):
     return {int(m): p for m, p in entry["monthly_probability"].items()}
 
 
+def route_n_observations(mode_key, origin_code, dest_code):
+    """{month_number: n_observations} for a pair. For flights this is the count
+    of carrier OTP readings behind that month's baseline; for rail it is the
+    zone observation count, which is vestigial now the model answers directly."""
+    cache = _load_cache()
+    entry = cache["routes"][route_id(mode_key, origin_code, dest_code)]
+    return {int(m): int(n) for m, n in entry.get("n_observations", {}).items()}
+
+
 def route_provenance(mode_key, origin_code, dest_code):
     """Human-readable string describing what real data this pair's numbers came from."""
     cache = _load_cache()
@@ -60,7 +69,19 @@ def cache_metadata():
         "generated_at": cache["generated_at"],
         "dgca_date_range": cache["dgca_date_range"],
         "weather_date_range": cache["weather_date_range"],
+        # present since rail moved to observed zone data; .get keeps older caches loadable
+        "rail_date_range": cache.get("rail_date_range", "unknown"),
+        "rail_rows_scanned": cache.get("rail_rows_scanned", 0),
     }
+
+
+def rail_model_meta():
+    """model_meta.json if the rail classifier has been trained, else None."""
+    path = os.path.join(os.path.dirname(CACHE_PATH), "model_meta.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
 
 
 def weather_evidence_summary():
