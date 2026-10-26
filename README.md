@@ -72,15 +72,15 @@ correctly rather than just rendering a form:
 2. **Clear Skip** — Flight, Mumbai (BOM) → Delhi (DEL), travel date in
    **February** (low weather severity, low disruption probability).
 3. **Marginal** — Flight, Chennai (MAA) → Bangalore (BLR), travel date in
-   **September/October** (shoulder of the NE monsoon peak) — EV sits close
-   to break-even here.
+   **September**, insurance cost set to **Rs.350** — EV sits at
+   break-even here (at the default Rs.200 premium it tips into Buy).
 
-Also worth showing: switch the **Travel mode** toggle to Train and pick
-Mumbai → Mangalore (Konkan corridor) with a July/August travel date —
-genuinely the highest weather-severity rail pair in the set, driven by
-real monsoon rainfall data at both endpoints. Origin and destination are
-two independent dropdowns (12 airports for Flight, 12 rail-hub cities for
-Train), so any pair can be checked, not just a curated list.
+Also worth showing: switch the **Travel mode** toggle to Train. Rail
+probabilities come from the trained classifier on real journey records,
+not a weather proxy, so they're flatter across the year than flights.
+Origin and destination are two independent dropdowns (12 airports for
+Flight, 12 rail-hub cities for Train), so any pair can be checked, not
+just a curated list.
 
 Exact verdicts now depend on the freshly-fetched data cache rather than
 fixed numbers — run `python scripts/fetch_data.py` and check the bar chart
@@ -95,9 +95,10 @@ for each pair to pick your live demo dates.
   not hardcoded.
 - **Simplified for time**: route-level probabilities are a real-baseline x
   real-weather blend rather than true per-route DGCA/NTES cancellation
-  records (which aren't publicly downloadable — see above). No ML
-  classifier yet (the report's Chakrabarty & Bhatt-style gradient boosting
-  model is the natural next step once more granular data is available).
+  records (which aren't publicly downloadable — see above). Rail uses a
+  gradient boosting classifier (`ml_model.py`, ROC-AUC 0.78 on ~975k
+  journeys); flights have no ML model yet, as no per-flight delay data is
+  publicly available.
   Ticket price / insurance cost are still user-editable illustrative
   defaults, not live insurer product data; payout is derived as a full
   ticket-price refund rather than pulled from real tiered policy wordings. The app takes a full travel date, but the

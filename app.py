@@ -125,7 +125,7 @@ if _bt:
             f"Back-tested against {_stats['total_n_journeys']:,} historical journey "
             f"records across {_stats['n_zone_pairs']} corridor pairs."
         )
-        st.bar_chart(_by_month)
+        st.bar_chart(_by_month, sort=False)
         st.caption(
             "Flight model uses national DGCA baselines — per-route flight back-test "
             "not available."
@@ -366,7 +366,7 @@ else:
         "Month": MONTHS,
         "Disruption probability": [summary["curve"][m] for m in range(1, 13)],
     })
-    st.bar_chart(chart_df.set_index("Month")["Disruption probability"])
+    st.bar_chart(chart_df.set_index("Month")["Disruption probability"], sort=False)
     st.caption(
         f"Your selected date falls in {MONTHS[summary['month'] - 1]}; bars show the "
         f"full seasonal pattern for this route."
