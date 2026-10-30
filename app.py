@@ -2,6 +2,7 @@ import datetime
 import json
 import os
 
+import altair as alt
 import pandas as pd
 import streamlit as st
 
@@ -27,8 +28,36 @@ st.set_page_config(
 
 CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data_cache")
 
-st.title("WeatherOrNot")
-st.caption("A multi-modal expected-value engine for travel insurance decisions")
+st.markdown("""
+<style>
+.block-container { max-width: 1100px; padding-top: 3rem; }
+[data-testid="stMetricValue"] { font-size: 1.6rem; }
+.won-hero {
+  background: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%);
+  color: #fff; border-radius: 18px; padding: 2rem 2.2rem; margin-bottom: 1.5rem;
+}
+.won-hero h1 { color: #fff; font-size: 2.6rem; margin: .3rem 0 .4rem; padding: 0; }
+.won-hero p { color: #e0e7ff; font-size: 1.1rem; margin: 0; max-width: 680px; }
+.won-badge {
+  display: inline-block; background: rgba(255,255,255,.18); border-radius: 999px;
+  padding: .2rem .8rem; font-size: .8rem; letter-spacing: .03em;
+}
+.won-verdict { border-radius: 16px; padding: 1.4rem 1.6rem; margin: .5rem 0 1rem; border: 1px solid; }
+.won-verdict .label { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; opacity: .8; }
+.won-verdict .value { font-size: 2.2rem; font-weight: 700; margin: .1rem 0 .4rem; }
+.won-verdict .text { font-size: 1.02rem; color: #1e293b; }
+.won-verdict .sub { font-size: .85rem; color: #475569; margin-top: .5rem; }
+.won-buy { background: #ecfdf5; border-color: #a7f3d0; } .won-buy .value { color: #047857; }
+.won-marginal { background: #fffbeb; border-color: #fde68a; } .won-marginal .value { color: #b45309; }
+.won-skip { background: #fef2f2; border-color: #fecaca; } .won-skip .value { color: #b91c1c; }
+</style>
+<div class="won-hero">
+  <span class="won-badge">Fintech Services · MIT Manipal</span>
+  <h1>🛡️ WeatherOrNot</h1>
+  <p>Is travel insurance worth it for <b>this</b> trip? We check the real disruption
+  risk for your route and travel month, then do the expected-value math for you.</p>
+</div>
+""", unsafe_allow_html=True)
 
 try:
     meta = cache_metadata()
@@ -36,7 +65,9 @@ except FileNotFoundError as e:
     st.error(str(e))
     st.stop()
 
-with st.expander("About this prototype", expanded=False):
+
+def about_body():
+    """Methodology and data notes, rendered in an expander at the bottom of the page."""
     st.write(
         "This is a working demo of the WeatherOrNot concept from the project report: "
         "it estimates the chance your trip gets disrupted, applies the expected-value "
@@ -112,24 +143,6 @@ def _backtest():
     )
     by_month.index = [MONTHS[m - 1] for m in by_month.index]
     return stats, by_month
-
-
-_bt = _backtest()
-if _bt:
-    _stats, _by_month = _bt
-    with st.expander("Model accuracy", expanded=False):
-        a1, a2 = st.columns(2)
-        a1.metric("Mean absolute error", f"{_stats['mae'] * 100:.1f} pp")
-        a2.metric("R²", f"{_stats['r2']:.2f}")
-        st.write(
-            f"Back-tested against {_stats['total_n_journeys']:,} historical journey "
-            f"records across {_stats['n_zone_pairs']} corridor pairs."
-        )
-        st.bar_chart(_by_month, sort=False)
-        st.caption(
-            "Flight model uses national DGCA baselines — per-route flight back-test "
-            "not available."
-        )
 
 
 # --- Data-source labelling -------------------------------------------------
@@ -245,7 +258,7 @@ def journey_inputs(key_prefix, side_by_side=True):
     }
 
 
-VERDICT_COLORS = {"Buy": "green", "Marginal": "orange", "Skip": "red"}
+VERDICT_ICONS = {"Buy": "✅", "Marginal": "⚖️", "Skip": "✋"}
 
 
 def render_journey(inputs, risk_aversion, show_risk_caption=True):
@@ -260,19 +273,23 @@ def render_journey(inputs, risk_aversion, show_risk_caption=True):
     result = compute_ev(probability, payout, inputs["insurance_cost"],
                         risk_aversion=risk_aversion)
 
-    st.markdown(f"### Verdict: :{VERDICT_COLORS[result.verdict]}[{result.verdict}]")
-    st.write(result.explanation)
-    st.caption(f"Based on typical {MONTHS[month - 1]} disruption patterns for this route.")
+    st.markdown(f"""
+<div class="won-verdict won-{result.verdict.lower()}">
+  <div class="label">Our recommendation</div>
+  <div class="value">{VERDICT_ICONS[result.verdict]} {result.verdict}</div>
+  <div class="text">{result.explanation}</div>
+  <div class="sub">Based on typical {MONTHS[month - 1]} disruption patterns for this route.</div>
+</div>""", unsafe_allow_html=True)
 
     note = route_note(mode_key, origin["name"], dest["name"], month)
     if note:
         st.info(note)
 
     m1, m2, m3 = st.columns(3)
-    m1.metric("Disruption probability", f"{probability:.1%}")
-    m1.caption(data_source_caption(mode_key, origin["code"], dest["code"], month))
-    m2.metric("Payout if disrupted", f"Rs.{payout:,.0f}")
-    m3.metric("Expected value", f"Rs.{result.ev:,.0f}")
+    m1.metric("Disruption risk", f"{probability:.1%}", border=True)
+    m2.metric("Payout", f"₹{payout:,.0f}", border=True)
+    m3.metric("Expected value", f"₹{result.ev:,.0f}", border=True)
+    st.caption(data_source_caption(mode_key, origin["code"], dest["code"], month))
 
     if show_risk_caption:
         st.caption(f"Risk sensitivity: {risk_aversion}/5")
@@ -316,10 +333,10 @@ if compare:
     risk_aversion = risk_slider("risk_choice_compare")
     st.caption(f"Risk sensitivity: {risk_aversion}/5 — applied to both journeys.")
     left, right = st.columns(2)
-    with left:
+    with left, st.container(border=True):
         st.subheader("Journey A")
         inputs_a = journey_inputs("a")
-    with right:
+    with right, st.container(border=True):
         st.subheader("Journey B")
         inputs_b = journey_inputs("b")
 
@@ -344,38 +361,38 @@ if compare:
             f"{riskier['label']} has higher disruption risk."
         )
 else:
-    inputs = journey_inputs("single", side_by_side=False)
-    st.caption(
-        f":gray[Data provenance:] "
-        f"{route_provenance(inputs['mode_key'], inputs['origin']['code'], inputs['dest']['code'])}"
-    )
-    st.caption(
-        "Assumes the insurance refunds your full ticket price if your trip is delayed "
-        "or cancelled - the common structure for this kind of travel cover."
-    )
+    trip, result_col = st.columns([5, 6], gap="large")
+    with trip, st.container(border=True):
+        st.markdown("#### ✈️ Plan your trip")
+        inputs = journey_inputs("single")
+        risk_aversion = risk_slider("risk_choice_single")
+        st.caption(
+            "Assumes the insurance refunds your full ticket price if your trip is delayed "
+            "or cancelled - the common structure for this kind of travel cover."
+        )
 
-    risk_aversion = risk_slider("risk_choice_single")
-
-    st.divider()
-
-    summary = render_journey(inputs, risk_aversion)
+    with result_col:
+        summary = render_journey(inputs, risk_aversion)
 
     # --- Seasonal chart ----------------------------------------------------
-    st.subheader(f"Disruption probability by month — {summary['label']}")
-    chart_df = pd.DataFrame({
-        "Month": MONTHS,
-        "Disruption probability": [summary["curve"][m] for m in range(1, 13)],
-    })
-    st.bar_chart(chart_df.set_index("Month")["Disruption probability"], sort=False)
-    st.caption(
-        f"Your selected date falls in {MONTHS[summary['month'] - 1]}; bars show the "
-        f"full seasonal pattern for this route."
-    )
-
-st.divider()
-st.caption(
-    "Prototype built for demo purposes — WeatherOrNot, Fintech Services Minor Project, MIT Manipal."
-)
+    with st.container(border=True):
+        st.markdown(f"#### Disruption risk by month — {summary['label']}")
+        selected = MONTHS[summary["month"] - 1]
+        chart_df = pd.DataFrame({
+            "Month": MONTHS,
+            "Disruption probability": [summary["curve"][m] for m in range(1, 13)],
+        })
+        chart = alt.Chart(chart_df).mark_bar(cornerRadiusTopLeft=6, cornerRadiusTopRight=6).encode(
+            x=alt.X("Month", sort=MONTHS, title=None, axis=alt.Axis(labelAngle=0, labelExpr="slice(datum.label, 0, 3)")),
+            y=alt.Y("Disruption probability", title=None, axis=alt.Axis(format="%")),
+            color=alt.condition(alt.datum.Month == selected, alt.value("#4f46e5"), alt.value("#c7d2fe")),
+            tooltip=["Month", alt.Tooltip("Disruption probability", format=".1%")],
+        ).properties(height=280)
+        st.altair_chart(chart, width="stretch")
+        st.caption(
+            f"Highlighted: {selected}, your travel month. "
+            f"Data provenance: {route_provenance(inputs['mode_key'], inputs['origin']['code'], inputs['dest']['code'])}"
+        )
 
 
 # --- Footer ----------------------------------------------------------------
@@ -397,11 +414,34 @@ def _footer_dates():
     return trained, cached
 
 
+st.write("")
+with st.expander("How it works & data sources", expanded=False):
+    about_body()
+
+_bt = _backtest()
+if _bt:
+    _stats, _by_month = _bt
+    with st.expander("Model accuracy", expanded=False):
+        a1, a2 = st.columns(2)
+        a1.metric("Mean absolute error", f"{_stats['mae'] * 100:.1f} pp", border=True)
+        a2.metric("R²", f"{_stats['r2']:.2f}", border=True)
+        st.write(
+            f"Back-tested against {_stats['total_n_journeys']:,} historical journey "
+            f"records across {_stats['n_zone_pairs']} corridor pairs."
+        )
+        st.bar_chart(_by_month, sort=False)
+        st.caption(
+            "Flight model uses national DGCA baselines — per-route flight back-test "
+            "not available."
+        )
+
 st.divider()
 _trained, _cached = _footer_dates()
-f1, f2, f3 = st.columns(3)
-f1.caption("Data: DGCA · Open-Meteo · Indian Railways (Kaggle)")
-if _trained:
-    f2.caption(f"Model trained: {_trained[:10]}")
-if _cached:
-    f3.caption(f"Cache: {_cached[:10]}")
+_dates = " · ".join(filter(None, [
+    _trained and f"Model trained {_trained[:10]}",
+    _cached and f"Data refreshed {_cached[:10]}",
+]))
+st.caption(
+    f"WeatherOrNot · Fintech Services Minor Project, MIT Manipal · "
+    f"Data: DGCA · Open-Meteo · Indian Railways · {_dates}"
+)
