@@ -1,0 +1,853 @@
+origin_zone,dest_zone,month,n_journeys,predicted_prob,actual_rate,abs_error,direction,actual_rate_express,n_journeys_express
+Central Railway,Central Railway,1,60864,0.092437,0.110772,0.018334,under,0.088048,30063
+Central Railway,Central Railway,2,55725,0.093058,0.101175,0.008117,under,0.065724,27311
+Central Railway,Central Railway,3,60864,0.074664,0.087671,0.013007,under,0.053721,30063
+Central Railway,Central Railway,4,60144,0.074504,0.083799,0.009295,under,0.05295,29745
+Central Railway,Central Railway,5,62123,0.085416,0.118185,0.032769,under,0.093709,30808
+Central Railway,Central Railway,6,59859,0.082238,0.117276,0.035037,under,0.085752,29667
+Central Railway,Central Railway,7,61556,0.078682,0.101615,0.022933,under,0.063109,30059
+Central Railway,Central Railway,8,61873,0.072835,0.087566,0.014731,under,0.055113,30283
+Central Railway,Central Railway,9,60807,0.072835,0.099462,0.026627,under,0.076255,29598
+Central Railway,Central Railway,10,61248,0.073738,0.086256,0.012517,under,0.08246,30548
+Central Railway,Central Railway,11,59440,0.078322,0.089771,0.011449,under,0.072995,29495
+Central Railway,Central Railway,12,62478,0.080858,0.100787,0.019929,under,0.072929,30605
+Central Railway,East Central Railway,1,6046,0.139292,0.147536,0.008244,under,0.147536,6046
+Central Railway,East Central Railway,2,4598,0.14858,0.283602,0.135022,under,0.283602,4598
+Central Railway,East Central Railway,3,5076,0.122672,0.136919,0.014247,under,0.136919,5076
+Central Railway,East Central Railway,4,5035,0.119402,0.134062,0.01466,under,0.134062,5035
+Central Railway,East Central Railway,5,5387,0.131073,0.190644,0.059571,under,0.190644,5387
+Central Railway,East Central Railway,6,5135,0.124717,0.20779,0.083073,under,0.20779,5135
+Central Railway,East Central Railway,7,5147,0.119289,0.087624,0.031665,over,0.087624,5147
+Central Railway,East Central Railway,8,5299,0.106454,0.099453,0.007001,over,0.099453,5299
+Central Railway,East Central Railway,9,5410,0.106454,0.119224,0.01277,under,0.119224,5410
+Central Railway,East Central Railway,10,5920,0.127475,0.163007,0.035532,under,0.163007,5920
+Central Railway,East Central Railway,11,5647,0.132504,0.181689,0.049185,under,0.181689,5647
+Central Railway,East Central Railway,12,5974,0.150733,0.181788,0.031055,under,0.181788,5974
+Central Railway,Eastern Railway,1,5562,0.275355,0.290363,0.015008,under,0.290363,5562
+Central Railway,Eastern Railway,2,4884,0.264212,0.346028,0.081816,under,0.346028,4884
+Central Railway,Eastern Railway,3,5515,0.210905,0.210335,0.00057,over,0.210335,5515
+Central Railway,Eastern Railway,4,5352,0.212162,0.111734,0.100428,over,0.111734,5352
+Central Railway,Eastern Railway,5,5518,0.263639,0.306452,0.042812,under,0.306452,5518
+Central Railway,Eastern Railway,6,5350,0.212563,0.271776,0.059213,under,0.271776,5350
+Central Railway,Eastern Railway,7,5545,0.204203,0.221641,0.017438,under,0.221641,5545
+Central Railway,Eastern Railway,8,5543,0.184142,0.209273,0.025131,under,0.209273,5543
+Central Railway,Eastern Railway,9,5371,0.184142,0.255446,0.071304,under,0.255446,5371
+Central Railway,Eastern Railway,10,5569,0.216782,0.313162,0.096381,under,0.313162,5569
+Central Railway,Eastern Railway,11,5410,0.234993,0.375786,0.140793,under,0.375786,5410
+Central Railway,Eastern Railway,12,5549,0.259394,0.286538,0.027144,under,0.286538,5549
+Central Railway,North Western Railway,1,1514,0.250814,0.251651,0.000838,under,0.251651,1514
+Central Railway,North Western Railway,2,859,0.23689,0.280559,0.043668,under,0.280559,859
+Central Railway,North Western Railway,3,851,0.17517,0.378378,0.203208,under,0.378378,851
+Central Railway,North Western Railway,4,741,0.173002,0.349528,0.176526,under,0.349528,741
+Central Railway,North Western Railway,5,1419,0.192761,0.381254,0.188493,under,0.381254,1419
+Central Railway,North Western Railway,6,1523,0.184098,0.278398,0.0943,under,0.278398,1523
+Central Railway,North Western Railway,7,1329,0.177158,0.221971,0.044814,under,0.221971,1329
+Central Railway,North Western Railway,8,1375,0.159571,0.225455,0.065884,under,0.225455,1375
+Central Railway,North Western Railway,9,1315,0.152897,0.196958,0.044061,under,0.196958,1315
+Central Railway,North Western Railway,10,1546,0.18829,0.350582,0.162292,under,0.350582,1546
+Central Railway,North Western Railway,11,1474,0.204538,0.217096,0.012558,under,0.217096,1474
+Central Railway,North Western Railway,12,1378,0.251959,0.179245,0.072713,over,0.179245,1378
+Central Railway,Northern Railway,1,8783,0.196826,0.252419,0.055594,under,0.255754,8473
+Central Railway,Northern Railway,2,7256,0.179344,0.181918,0.002574,under,0.188503,6976
+Central Railway,Northern Railway,3,8748,0.132195,0.125743,0.006452,over,0.130363,8438
+Central Railway,Northern Railway,4,8694,0.117277,0.104325,0.012952,over,0.108053,8394
+Central Railway,Northern Railway,5,8873,0.137079,0.112363,0.024716,over,0.116431,8563
+Central Railway,Northern Railway,6,8720,0.137089,0.106995,0.030093,over,0.109976,8420
+Central Railway,Northern Railway,7,8944,0.126805,0.130031,0.003226,under,0.1347,8634
+Central Railway,Northern Railway,8,8961,0.115865,0.12733,0.011465,under,0.130621,8651
+Central Railway,Northern Railway,9,8761,0.113527,0.083552,0.029975,over,0.085924,8461
+Central Railway,Northern Railway,10,8965,0.126946,0.157613,0.030667,under,0.163027,8655
+Central Railway,Northern Railway,11,8809,0.133691,0.14769,0.013999,under,0.151957,8509
+Central Railway,Northern Railway,12,8858,0.201318,0.22793,0.026611,under,0.230814,8548
+Central Railway,South Western Railway,1,12365,0.17147,0.105621,0.06585,over,0.093304,8274
+Central Railway,South Western Railway,2,8710,0.145411,0.141906,0.003505,over,0.09374,6390
+Central Railway,South Western Railway,3,9804,0.110735,0.125459,0.014724,under,0.079791,6705
+Central Railway,South Western Railway,4,9414,0.122735,0.128001,0.005265,under,0.090282,6380
+Central Railway,South Western Railway,5,9847,0.145901,0.13791,0.007991,over,0.087994,6705
+Central Railway,South Western Railway,6,9499,0.123522,0.09422,0.029302,over,0.077486,6427
+Central Railway,South Western Railway,7,9899,0.109883,0.111223,0.001341,under,0.079382,6727
+Central Railway,South Western Railway,8,9890,0.108058,0.091608,0.016451,over,0.050119,6724
+Central Railway,South Western Railway,9,9643,0.108058,0.074873,0.033185,over,0.070342,6511
+Central Railway,South Western Railway,10,10668,0.120824,0.09252,0.028305,over,0.070076,6864
+Central Railway,South Western Railway,11,10770,0.128773,0.094429,0.034344,over,0.069852,6614
+Central Railway,South Western Railway,12,11630,0.126803,0.07816,0.048643,over,0.058944,7329
+Central Railway,Southern Railway,1,11991,0.235432,0.339671,0.104239,under,0.338429,11775
+Central Railway,Southern Railway,2,10639,0.187377,0.170223,0.017154,over,0.167129,10447
+Central Railway,Southern Railway,3,11702,0.152524,0.101692,0.050832,over,0.102647,11486
+Central Railway,Southern Railway,4,11321,0.151939,0.118806,0.033133,over,0.118519,11129
+Central Railway,Southern Railway,5,11722,0.223159,0.235796,0.012637,under,0.236138,11506
+Central Railway,Southern Railway,6,11316,0.183475,0.156769,0.026706,over,0.158829,11100
+Central Railway,Southern Railway,7,11649,0.176553,0.16628,0.010272,over,0.167059,11457
+Central Railway,Southern Railway,8,11772,0.164511,0.19334,0.028829,under,0.191848,11556
+Central Railway,Southern Railway,9,11498,0.164511,0.182727,0.018216,under,0.185074,11282
+Central Railway,Southern Railway,10,11921,0.189505,0.221793,0.032289,under,0.220675,11705
+Central Railway,Southern Railway,11,11603,0.248395,0.241231,0.007164,over,0.242573,11411
+Central Railway,Southern Railway,12,11954,0.27407,0.258156,0.015913,over,0.259073,11738
+Central Railway,Western Railway,1,8570,0.084934,0.052859,0.032075,over,0.051055,4740
+Central Railway,Western Railway,2,7716,0.081367,0.061431,0.019936,over,0.066914,4319
+Central Railway,Western Railway,3,8551,0.061664,0.044556,0.017108,over,0.017522,4794
+Central Railway,Western Railway,4,8278,0.063677,0.039744,0.023933,over,0.060378,4654
+Central Railway,Western Railway,5,8544,0.078216,0.102528,0.024312,under,0.146117,4777
+Central Railway,Western Railway,6,8292,0.079495,0.049083,0.030411,over,0.063264,4663
+Central Railway,Western Railway,7,8542,0.071149,0.028682,0.042467,over,0.039884,4814
+Central Railway,Western Railway,8,8611,0.069319,0.042155,0.027164,over,0.03866,4837
+Central Railway,Western Railway,9,8404,0.069319,0.031771,0.037549,over,0.045252,4707
+Central Railway,Western Railway,10,8690,0.068293,0.034177,0.034116,over,0.043496,4874
+Central Railway,Western Railway,11,8377,0.07654,0.038916,0.037624,over,0.054267,4699
+Central Railway,Western Railway,12,8705,0.085956,0.068007,0.017949,over,0.087748,4889
+East Central Railway,Central Railway,1,5964,0.237186,0.215627,0.021559,over,0.215627,5964
+East Central Railway,Central Railway,2,4604,0.270133,0.410078,0.139946,under,0.410078,4604
+East Central Railway,Central Railway,3,5117,0.227267,0.205394,0.021874,over,0.205394,5117
+East Central Railway,Central Railway,4,5004,0.209498,0.176859,0.03264,over,0.176859,5004
+East Central Railway,Central Railway,5,5350,0.216664,0.245981,0.029317,under,0.245981,5350
+East Central Railway,Central Railway,6,5172,0.194524,0.218871,0.024347,under,0.218871,5172
+East Central Railway,Central Railway,7,5157,0.185832,0.163273,0.022559,over,0.163273,5157
+East Central Railway,Central Railway,8,5233,0.174726,0.081215,0.093511,over,0.081215,5233
+East Central Railway,Central Railway,9,5327,0.174726,0.151117,0.023609,over,0.151117,5327
+East Central Railway,Central Railway,10,5817,0.208302,0.273165,0.064863,under,0.273165,5817
+East Central Railway,Central Railway,11,5660,0.254654,0.29258,0.037925,under,0.29258,5660
+East Central Railway,Central Railway,12,5975,0.312733,0.371381,0.058648,under,0.371381,5975
+East Central Railway,East Central Railway,1,187644,0.202832,0.282135,0.079303,under,0.174041,28160
+East Central Railway,East Central Railway,2,150897,0.203649,0.267785,0.064137,under,0.196235,22947
+East Central Railway,East Central Railway,3,167108,0.173112,0.263183,0.090071,under,0.143739,25602
+East Central Railway,East Central Railway,4,165466,0.163582,0.263051,0.099469,under,0.139627,25210
+East Central Railway,East Central Railway,5,176174,0.175146,0.265374,0.090228,under,0.120787,26021
+East Central Railway,East Central Railway,6,170004,0.161131,0.267953,0.106821,under,0.125526,25190
+East Central Railway,East Central Railway,7,176472,0.157138,0.261141,0.104002,under,0.116015,26126
+East Central Railway,East Central Railway,8,173730,0.138379,0.223842,0.085463,under,0.100653,26348
+East Central Railway,East Central Railway,9,169397,0.138379,0.221763,0.083384,under,0.118585,26403
+East Central Railway,East Central Railway,10,186011,0.188292,0.317884,0.129593,under,0.210517,28240
+East Central Railway,East Central Railway,11,183184,0.245219,0.368586,0.123367,under,0.247703,27315
+East Central Railway,East Central Railway,12,191202,0.267381,0.334861,0.06748,under,0.234745,28056
+East Central Railway,Eastern Railway,1,32593,0.134317,0.21118,0.076863,under,0.195936,17715
+East Central Railway,Eastern Railway,2,28199,0.147662,0.117947,0.029715,over,0.096715,15675
+East Central Railway,Eastern Railway,3,31844,0.102563,0.10049,0.002073,over,0.065669,17436
+East Central Railway,Eastern Railway,4,31059,0.099298,0.117583,0.018285,under,0.099976,16864
+East Central Railway,Eastern Railway,5,32123,0.116596,0.120941,0.004346,under,0.075267,17418
+East Central Railway,Eastern Railway,6,30956,0.094995,0.135353,0.040358,under,0.087204,16857
+East Central Railway,Eastern Railway,7,32152,0.09246,0.13346,0.041,under,0.091648,17469
+East Central Railway,Eastern Railway,8,32346,0.080683,0.108298,0.027615,under,0.073072,17599
+East Central Railway,Eastern Railway,9,31290,0.080683,0.093544,0.012861,under,0.041747,17079
+East Central Railway,Eastern Railway,10,31868,0.099069,0.141553,0.042484,under,0.136592,17695
+East Central Railway,Eastern Railway,11,31336,0.151814,0.198621,0.046807,under,0.187938,16979
+East Central Railway,Eastern Railway,12,31996,0.216327,0.245312,0.028985,under,0.248378,17264
+East Central Railway,North Central Railway,1,4100,0.249888,0.254634,0.004746,under,0.270559,1593
+East Central Railway,North Central Railway,2,3625,0.249826,0.353379,0.103553,under,0.348039,1428
+East Central Railway,North Central Railway,3,4171,0.190582,0.205706,0.015124,under,0.357485,1877
+East Central Railway,North Central Railway,4,4299,0.170878,0.1719,0.001022,under,0.213564,2079
+East Central Railway,North Central Railway,5,4407,0.199139,0.270933,0.071794,under,0.377652,2121
+East Central Railway,North Central Railway,6,4300,0.1699,0.233023,0.063123,under,0.239904,2080
+East Central Railway,North Central Railway,7,4445,0.166618,0.213048,0.046431,under,0.284519,2151
+East Central Railway,North Central Railway,8,4458,0.146924,0.166667,0.019743,under,0.216728,2164
+East Central Railway,North Central Railway,9,4416,0.146924,0.170969,0.024045,under,0.2,2175
+East Central Railway,North Central Railway,10,4547,0.171822,0.23532,0.063498,under,0.256991,2253
+East Central Railway,North Central Railway,11,4348,0.213761,0.229991,0.01623,under,0.261748,2128
+East Central Railway,North Central Railway,12,3755,0.303382,0.226099,0.077283,over,0.251198,1461
+East Central Railway,Northern Railway,1,23135,0.358076,0.347914,0.010162,over,0.26797,18002
+East Central Railway,Northern Railway,2,18228,0.330093,0.37585,0.045757,under,0.306437,13967
+East Central Railway,Northern Railway,3,22841,0.266383,0.316886,0.050503,under,0.244803,18039
+East Central Railway,Northern Railway,4,22558,0.245921,0.28757,0.041649,under,0.219056,17895
+East Central Railway,Northern Railway,5,23298,0.277877,0.353078,0.075201,under,0.292369,18439
+East Central Railway,Northern Railway,6,22716,0.262017,0.307537,0.04552,under,0.231399,17969
+East Central Railway,Northern Railway,7,23340,0.23316,0.276692,0.043532,under,0.211331,18516
+East Central Railway,Northern Railway,8,24157,0.211806,0.212195,0.000389,under,0.130514,19270
+East Central Railway,Northern Railway,9,23789,0.207989,0.232881,0.024892,under,0.143023,18941
+East Central Railway,Northern Railway,10,24974,0.253052,0.31761,0.064558,under,0.218969,19843
+East Central Railway,Northern Railway,11,24180,0.32083,0.387883,0.067053,under,0.304284,19209
+East Central Railway,Northern Railway,12,23072,0.404191,0.434683,0.030492,under,0.367776,17943
+East Central Railway,South Western Railway,1,1857,0.449272,0.39203,0.057242,over,0.366056,1691
+East Central Railway,South Western Railway,2,1572,0.420018,0.493003,0.072985,under,0.501693,1477
+East Central Railway,South Western Railway,3,1772,0.366085,0.386005,0.019919,under,0.367057,1621
+East Central Railway,South Western Railway,4,1735,0.356047,0.282421,0.073627,over,0.252712,1567
+East Central Railway,South Western Railway,5,1787,0.385829,0.258534,0.127295,over,0.239306,1613
+East Central Railway,South Western Railway,6,1717,0.337083,0.337216,0.000133,under,0.316933,1565
+East Central Railway,South Western Railway,7,1792,0.312613,0.271763,0.040849,over,0.251561,1602
+East Central Railway,South Western Railway,8,1765,0.304162,0.177337,0.126824,over,0.15933,1613
+East Central Railway,South Western Railway,9,1811,0.304162,0.258973,0.045189,over,0.238698,1659
+East Central Railway,South Western Railway,10,1843,0.347413,0.354856,0.007444,under,0.328939,1669
+East Central Railway,South Western Railway,11,1769,0.459484,0.285472,0.174012,over,0.268398,1617
+East Central Railway,South Western Railway,12,1874,0.536787,0.534685,0.002102,over,0.512309,1706
+East Central Railway,Southern Railway,1,3583,0.485307,0.416969,0.068338,over,0.416969,3583
+East Central Railway,Southern Railway,2,3120,0.448423,0.362179,0.086244,over,0.362179,3120
+East Central Railway,Southern Railway,3,3441,0.396016,0.315025,0.080992,over,0.315025,3441
+East Central Railway,Southern Railway,4,3323,0.378404,0.380379,0.001975,under,0.380379,3323
+East Central Railway,Southern Railway,5,3451,0.463977,0.46856,0.004583,under,0.46856,3451
+East Central Railway,Southern Railway,6,3366,0.382654,0.530897,0.148243,under,0.530897,3366
+East Central Railway,Southern Railway,7,3447,0.376517,0.340586,0.035931,over,0.340586,3447
+East Central Railway,Southern Railway,8,3494,0.351978,0.329422,0.022556,over,0.329422,3494
+East Central Railway,Southern Railway,9,3519,0.351978,0.275646,0.076331,over,0.275646,3519
+East Central Railway,Southern Railway,10,3535,0.414268,0.511457,0.097188,under,0.511457,3535
+East Central Railway,Southern Railway,11,3442,0.567594,0.58774,0.020146,under,0.58774,3442
+East Central Railway,Southern Railway,12,3606,0.674441,0.592069,0.082372,over,0.592069,3606
+East Central Railway,Western Railway,1,6081,0.430443,0.453544,0.023101,under,0.457724,5949
+East Central Railway,Western Railway,2,5178,0.437797,0.44747,0.009673,under,0.446211,5094
+East Central Railway,Western Railway,3,6002,0.389208,0.365045,0.024163,over,0.366106,5889
+East Central Railway,Western Railway,4,5893,0.362405,0.294587,0.067818,over,0.300487,5744
+East Central Railway,Western Railway,5,5883,0.414335,0.412715,0.001621,over,0.414075,5755
+East Central Railway,Western Railway,6,5905,0.363311,0.371041,0.00773,under,0.370705,5762
+East Central Railway,Western Railway,7,6033,0.352579,0.337809,0.014771,over,0.339619,5886
+East Central Railway,Western Railway,8,5995,0.341508,0.296914,0.044594,over,0.299676,5863
+East Central Railway,Western Railway,9,6037,0.341508,0.307272,0.034236,over,0.307509,5873
+East Central Railway,Western Railway,10,6258,0.373706,0.434963,0.061257,under,0.434378,6126
+East Central Railway,Western Railway,11,6008,0.411283,0.442077,0.030794,under,0.443329,5876
+East Central Railway,Western Railway,12,6352,0.543815,0.604849,0.061034,under,0.608211,6187
+Eastern Railway,Central Railway,1,5446,0.521589,0.590525,0.068936,under,0.590525,5446
+Eastern Railway,Central Railway,2,4749,0.520432,0.74184,0.221408,under,0.74184,4749
+Eastern Railway,Central Railway,3,5347,0.49177,0.630821,0.139051,under,0.630821,5347
+Eastern Railway,Central Railway,4,5158,0.482193,0.396665,0.085528,over,0.396665,5158
+Eastern Railway,Central Railway,5,5340,0.552866,0.596629,0.043763,under,0.596629,5340
+Eastern Railway,Central Railway,6,5200,0.44608,0.603846,0.157766,under,0.603846,5200
+Eastern Railway,Central Railway,7,5341,0.43669,0.592773,0.156083,under,0.592773,5341
+Eastern Railway,Central Railway,8,5474,0.432973,0.582389,0.149417,under,0.582389,5474
+Eastern Railway,Central Railway,9,5260,0.432973,0.600951,0.167978,under,0.600951,5260
+Eastern Railway,Central Railway,10,5446,0.494406,0.617517,0.123112,under,0.617517,5446
+Eastern Railway,Central Railway,11,5307,0.503483,0.639533,0.13605,under,0.639533,5307
+Eastern Railway,Central Railway,12,5412,0.531677,0.673319,0.141641,under,0.673319,5412
+Eastern Railway,East Central Railway,1,34022,0.245854,0.259597,0.013743,under,0.244716,18168
+Eastern Railway,East Central Railway,2,29490,0.235074,0.181146,0.053928,over,0.165973,16105
+Eastern Railway,East Central Railway,3,33220,0.199508,0.157917,0.041591,over,0.114714,17888
+Eastern Railway,East Central Railway,4,32497,0.193044,0.166908,0.026136,over,0.126202,17361
+Eastern Railway,East Central Railway,5,33605,0.163625,0.149918,0.013707,over,0.091625,17899
+Eastern Railway,East Central Railway,6,32275,0.177364,0.175399,0.001965,over,0.134332,17293
+Eastern Railway,East Central Railway,7,33595,0.175695,0.194642,0.018948,under,0.148781,17966
+Eastern Railway,East Central Railway,8,33711,0.161797,0.171724,0.009927,under,0.140746,18068
+Eastern Railway,East Central Railway,9,32602,0.161797,0.177167,0.01537,under,0.125007,17487
+Eastern Railway,East Central Railway,10,33488,0.181596,0.201833,0.020237,under,0.165493,18182
+Eastern Railway,East Central Railway,11,32746,0.26488,0.253222,0.011658,over,0.229993,17444
+Eastern Railway,East Central Railway,12,33282,0.315684,0.312301,0.003383,over,0.303972,17699
+Eastern Railway,Eastern Railway,1,125339,0.108893,0.08339,0.025503,over,0.048571,17953
+Eastern Railway,Eastern Railway,2,115353,0.102414,0.068355,0.034058,over,0.025099,16176
+Eastern Railway,Eastern Railway,3,128656,0.077178,0.061427,0.01575,over,0.01918,17727
+Eastern Railway,Eastern Railway,4,124879,0.075558,0.067065,0.008493,over,0.025961,17334
+Eastern Railway,Eastern Railway,5,126038,0.067105,0.052619,0.014486,over,0.016772,17947
+Eastern Railway,Eastern Railway,6,121430,0.067534,0.046274,0.02126,over,0.01857,17232
+Eastern Railway,Eastern Railway,7,125433,0.066814,0.060718,0.006096,over,0.013487,17943
+Eastern Railway,Eastern Railway,8,125049,0.060893,0.060144,0.000749,over,0.014712,17808
+Eastern Railway,Eastern Railway,9,121306,0.060893,0.056015,0.004878,over,0.034513,17356
+Eastern Railway,Eastern Railway,10,125479,0.060731,0.045099,0.015632,over,0.021513,17943
+Eastern Railway,Eastern Railway,11,118568,0.080805,0.06436,0.016445,over,0.038116,16922
+Eastern Railway,Eastern Railway,12,121699,0.105987,0.096854,0.009133,over,0.107006,16943
+Eastern Railway,North Central Railway,1,741,0.209107,0.103914,0.105194,over,0.103914,741
+Eastern Railway,North Central Railway,2,556,0.202478,0.406475,0.203997,under,0.406475,556
+Eastern Railway,North Central Railway,3,793,0.147944,0.189155,0.041211,under,0.189155,793
+Eastern Railway,North Central Railway,4,843,0.148,0.105575,0.042424,over,0.105575,843
+Eastern Railway,North Central Railway,5,817,0.167257,0.106487,0.060769,over,0.106487,817
+Eastern Railway,North Central Railway,6,810,0.120961,0.12963,0.008669,under,0.12963,810
+Eastern Railway,North Central Railway,7,865,0.12042,0.104046,0.016374,over,0.104046,865
+Eastern Railway,North Central Railway,8,845,0.11031,0.138462,0.028152,under,0.138462,845
+Eastern Railway,North Central Railway,9,794,0.11031,0.059194,0.051116,over,0.059194,794
+Eastern Railway,North Central Railway,10,866,0.112306,0.103926,0.00838,over,0.103926,866
+Eastern Railway,North Central Railway,11,722,0.157932,0.126039,0.031893,over,0.126039,722
+Eastern Railway,North Central Railway,12,767,0.221901,0.316819,0.094918,under,0.316819,767
+Eastern Railway,North Western Railway,1,2207,0.205313,0.187585,0.017728,over,0.187585,2207
+Eastern Railway,North Western Railway,2,1842,0.17852,0.474484,0.295964,under,0.474484,1842
+Eastern Railway,North Western Railway,3,2288,0.137477,0.14729,0.009813,under,0.14729,2288
+Eastern Railway,North Western Railway,4,2229,0.145111,0.074024,0.071086,over,0.074024,2229
+Eastern Railway,North Western Railway,5,2360,0.136296,0.072458,0.063839,over,0.072458,2360
+Eastern Railway,North Western Railway,6,2236,0.115566,0.090787,0.024779,over,0.090787,2236
+Eastern Railway,North Western Railway,7,2338,0.114781,0.056459,0.058323,over,0.056459,2338
+Eastern Railway,North Western Railway,8,2452,0.105333,0.063622,0.041712,over,0.063622,2452
+Eastern Railway,North Western Railway,9,2455,0.100021,0.085132,0.014889,over,0.085132,2455
+Eastern Railway,North Western Railway,10,2510,0.145696,0.125896,0.019799,over,0.125896,2510
+Eastern Railway,North Western Railway,11,2352,0.154884,0.152211,0.002673,over,0.152211,2352
+Eastern Railway,North Western Railway,12,2194,0.217938,0.318596,0.100658,under,0.318596,2194
+Eastern Railway,Northern Railway,1,15292,0.311021,0.272038,0.038984,over,0.320255,11444
+Eastern Railway,Northern Railway,2,12519,0.286565,0.384216,0.097651,under,0.4397,9063
+Eastern Railway,Northern Railway,3,14739,0.216128,0.213922,0.002206,over,0.2477,10868
+Eastern Railway,Northern Railway,4,14851,0.214376,0.160191,0.054185,over,0.192651,11103
+Eastern Railway,Northern Railway,5,15398,0.241246,0.178595,0.062651,over,0.21369,11512
+Eastern Railway,Northern Railway,6,14765,0.197904,0.181239,0.016665,over,0.207974,11011
+Eastern Railway,Northern Railway,7,15387,0.178068,0.142523,0.035545,over,0.172647,11509
+Eastern Railway,Northern Railway,8,15459,0.167169,0.127369,0.0398,over,0.149055,11593
+Eastern Railway,Northern Railway,9,15097,0.164378,0.138769,0.025609,over,0.165473,11313
+Eastern Railway,Northern Railway,10,15795,0.174334,0.159797,0.014537,over,0.179431,11921
+Eastern Railway,Northern Railway,11,15190,0.230408,0.209875,0.020534,over,0.220668,11438
+Eastern Railway,Northern Railway,12,15006,0.337499,0.309609,0.027889,over,0.368144,11194
+Eastern Railway,South Western Railway,1,1791,0.397657,0.335008,0.062648,over,0.308725,1639
+Eastern Railway,South Western Railway,2,1632,0.351309,0.693627,0.342319,under,0.701281,1483
+Eastern Railway,South Western Railway,3,1811,0.306914,0.674765,0.367851,under,0.675892,1626
+Eastern Railway,South Western Railway,4,1746,0.298415,0.572738,0.274323,under,0.567584,1598
+Eastern Railway,South Western Railway,5,1767,0.277934,0.74137,0.463435,under,0.76467,1619
+Eastern Railway,South Western Railway,6,1777,0.278023,0.587507,0.309485,under,0.572236,1592
+Eastern Railway,South Western Railway,7,1783,0.374659,0.681997,0.307338,under,0.681346,1635
+Eastern Railway,South Western Railway,8,1807,0.251011,0.532374,0.281363,under,0.536468,1659
+Eastern Railway,South Western Railway,9,1754,0.251011,0.460661,0.20965,under,0.451469,1566
+Eastern Railway,South Western Railway,10,1838,0.250478,0.483134,0.232656,under,0.469751,1686
+Eastern Railway,South Western Railway,11,1744,0.309119,0.454128,0.145009,under,0.42902,1592
+Eastern Railway,South Western Railway,12,1847,0.380424,0.517055,0.13663,under,0.498491,1657
+Eastern Railway,Southern Railway,1,2238,0.447595,0.279267,0.168327,over,0.279267,2238
+Eastern Railway,Southern Railway,2,2033,0.385414,0.696016,0.310602,under,0.696016,2033
+Eastern Railway,Southern Railway,3,2281,0.348053,0.641385,0.293332,under,0.641385,2281
+Eastern Railway,Southern Railway,4,2165,0.338158,0.569053,0.230895,under,0.569053,2165
+Eastern Railway,Southern Railway,5,2234,0.32122,0.761415,0.440195,under,0.761415,2234
+Eastern Railway,Southern Railway,6,2205,0.319924,0.603628,0.283704,under,0.603628,2205
+Eastern Railway,Southern Railway,7,2240,0.31825,0.649554,0.331303,under,0.649554,2240
+Eastern Railway,Southern Railway,8,2254,0.301809,0.580745,0.278937,under,0.580745,2254
+Eastern Railway,Southern Railway,9,2168,0.301809,0.502768,0.200959,under,0.502768,2168
+Eastern Railway,Southern Railway,10,2244,0.301211,0.44385,0.142639,under,0.44385,2244
+Eastern Railway,Southern Railway,11,2205,0.437697,0.295238,0.142459,over,0.295238,2205
+Eastern Railway,Southern Railway,12,2250,0.511477,0.475111,0.036366,over,0.475111,2250
+Eastern Railway,Western Railway,1,3551,0.549116,0.618981,0.069865,under,0.611265,3249
+Eastern Railway,Western Railway,2,2762,0.534516,0.762129,0.227613,under,0.765019,2630
+Eastern Railway,Western Railway,3,3455,0.498235,0.552533,0.054297,under,0.552706,3197
+Eastern Railway,Western Railway,4,3214,0.481409,0.383945,0.097464,over,0.402373,2950
+Eastern Railway,Western Railway,5,3505,0.613777,0.576034,0.037743,over,0.582062,3211
+Eastern Railway,Western Railway,6,3343,0.465039,0.563566,0.098527,under,0.546172,3043
+Eastern Railway,Western Railway,7,3384,0.512444,0.572104,0.05966,under,0.565385,3120
+Eastern Railway,Western Railway,8,3412,0.443457,0.549531,0.106074,under,0.552598,3118
+Eastern Railway,Western Railway,9,3358,0.443457,0.600357,0.1569,under,0.585597,3055
+Eastern Railway,Western Railway,10,3418,0.493585,0.610298,0.116713,under,0.605907,3149
+Eastern Railway,Western Railway,11,3385,0.560047,0.636928,0.07688,under,0.637366,3083
+Eastern Railway,Western Railway,12,3451,0.610069,0.723558,0.113489,under,0.717287,3141
+North Central Railway,East Central Railway,1,4150,0.399301,0.30747,0.091831,over,0.396719,1646
+North Central Railway,East Central Railway,2,3700,0.403342,0.621351,0.218009,under,0.629404,1476
+North Central Railway,East Central Railway,3,4492,0.31829,0.453918,0.135628,under,0.434941,2198
+North Central Railway,East Central Railway,4,4347,0.289662,0.4755,0.185838,under,0.540515,2135
+North Central Railway,East Central Railway,5,4451,0.315718,0.463716,0.147998,under,0.564538,2177
+North Central Railway,East Central Railway,6,4359,0.305796,0.457215,0.151419,under,0.43338,2139
+North Central Railway,East Central Railway,7,4507,0.260542,0.329487,0.068945,under,0.312698,2213
+North Central Railway,East Central Railway,8,4519,0.289239,0.393007,0.103768,under,0.484494,2225
+North Central Railway,East Central Railway,9,4477,0.240891,0.383069,0.142178,under,0.500447,2236
+North Central Railway,East Central Railway,10,4609,0.325971,0.416142,0.090171,under,0.503672,2315
+North Central Railway,East Central Railway,11,4408,0.396801,0.406987,0.010186,under,0.458867,2188
+North Central Railway,East Central Railway,12,3808,0.456379,0.385504,0.070874,over,0.586526,1514
+North Central Railway,Eastern Railway,1,789,0.163985,0.418251,0.254265,under,0.418251,789
+North Central Railway,Eastern Railway,2,557,0.164459,0.490126,0.325667,under,0.490126,557
+North Central Railway,Eastern Railway,3,843,0.109795,0.256228,0.146433,under,0.256228,843
+North Central Railway,Eastern Railway,4,791,0.104004,0.20354,0.099536,under,0.20354,791
+North Central Railway,Eastern Railway,5,884,0.12067,0.196833,0.076162,under,0.196833,884
+North Central Railway,Eastern Railway,6,795,0.108013,0.106918,0.001095,over,0.106918,795
+North Central Railway,Eastern Railway,7,843,0.082154,0.130486,0.048333,under,0.130486,843
+North Central Railway,Eastern Railway,8,832,0.098956,0.094952,0.004004,over,0.094952,832
+North Central Railway,Eastern Railway,9,826,0.0746,0.075061,0.000461,under,0.075061,826
+North Central Railway,Eastern Railway,10,831,0.096309,0.143201,0.046892,under,0.143201,831
+North Central Railway,Eastern Railway,11,726,0.151625,0.101928,0.049697,over,0.101928,726
+North Central Railway,Eastern Railway,12,750,0.215499,0.441333,0.225834,under,0.441333,750
+North Central Railway,North Central Railway,1,38976,0.231918,0.27363,0.041712,under,0.312831,7186
+North Central Railway,North Central Railway,2,28453,0.236427,0.332267,0.095841,under,0.378771,6331
+North Central Railway,North Central Railway,3,33778,0.154326,0.188703,0.034376,under,0.165182,6962
+North Central Railway,North Central Railway,4,35909,0.12288,0.108859,0.014022,over,0.073156,6780
+North Central Railway,North Central Railway,5,38175,0.14714,0.141794,0.005346,over,0.130355,7050
+North Central Railway,North Central Railway,6,37080,0.13741,0.157039,0.019628,under,0.16567,7020
+North Central Railway,North Central Railway,7,38659,0.122121,0.140226,0.018105,under,0.150931,7414
+North Central Railway,North Central Railway,8,37287,0.131678,0.124896,0.006782,over,0.095727,7302
+North Central Railway,North Central Railway,9,36200,0.111338,0.132265,0.020928,under,0.099915,7026
+North Central Railway,North Central Railway,10,37624,0.132808,0.191553,0.058746,under,0.163683,7374
+North Central Railway,North Central Railway,11,36057,0.159992,0.174113,0.014121,under,0.166141,6657
+North Central Railway,North Central Railway,12,34806,0.254084,0.297679,0.043594,under,0.362726,5092
+North Central Railway,North Western Railway,1,8840,0.207397,0.295362,0.087965,under,0.276371,5764
+North Central Railway,North Western Railway,2,7116,0.213309,0.262648,0.049339,under,0.210303,4950
+North Central Railway,North Western Railway,3,8566,0.141968,0.224726,0.082757,under,0.178235,5633
+North Central Railway,North Western Railway,4,8330,0.113193,0.239136,0.125943,under,0.159927,5490
+North Central Railway,North Western Railway,5,8684,0.135643,0.203363,0.06772,under,0.20127,5669
+North Central Railway,North Western Railway,6,8447,0.12656,0.148455,0.021895,under,0.198699,5536
+North Central Railway,North Western Railway,7,8789,0.115473,0.184435,0.068962,under,0.200939,5753
+North Central Railway,North Western Railway,8,8791,0.124681,0.148447,0.023766,under,0.131902,5777
+North Central Railway,North Western Railway,9,8513,0.100704,0.132738,0.032034,under,0.129351,5574
+North Central Railway,North Western Railway,10,8760,0.132581,0.21621,0.083629,under,0.181392,5761
+North Central Railway,North Western Railway,11,8436,0.147872,0.174253,0.026381,under,0.15039,5519
+North Central Railway,North Western Railway,12,8858,0.236547,0.297471,0.060924,under,0.291141,5791
+North Central Railway,Northern Railway,1,21870,0.232355,0.260448,0.028094,under,0.268891,6114
+North Central Railway,Northern Railway,2,18051,0.226378,0.22586,0.000518,over,0.240744,5321
+North Central Railway,Northern Railway,3,20594,0.153923,0.143343,0.01058,over,0.118878,6166
+North Central Railway,Northern Railway,4,22512,0.127103,0.105188,0.021915,over,0.07405,6212
+North Central Railway,Northern Railway,5,24160,0.148911,0.125952,0.022959,over,0.090387,6439
+North Central Railway,Northern Railway,6,23159,0.137759,0.127985,0.009774,over,0.09302,6246
+North Central Railway,Northern Railway,7,24136,0.127059,0.123301,0.003758,over,0.074716,6518
+North Central Railway,Northern Railway,8,24249,0.133291,0.134191,0.0009,under,0.104706,6523
+North Central Railway,Northern Railway,9,23444,0.116165,0.108002,0.008163,over,0.028185,6280
+North Central Railway,Northern Railway,10,24172,0.138086,0.173051,0.034966,under,0.098378,6475
+North Central Railway,Northern Railway,11,23272,0.176657,0.179443,0.002786,under,0.067719,6143
+North Central Railway,Northern Railway,12,22020,0.257465,0.286739,0.029275,under,0.284798,6078
+North Central Railway,Western Railway,1,4320,0.17538,0.117593,0.057788,over,0.117593,4320
+North Central Railway,Western Railway,2,3801,0.190299,0.128387,0.061912,over,0.128387,3801
+North Central Railway,Western Railway,3,4456,0.137546,0.129488,0.008057,over,0.129488,4456
+North Central Railway,Western Railway,4,4792,0.110234,0.053631,0.056603,over,0.053631,4792
+North Central Railway,Western Railway,5,4950,0.130947,0.071515,0.059432,over,0.071515,4950
+North Central Railway,Western Railway,6,4863,0.116544,0.064364,0.052181,over,0.064364,4863
+North Central Railway,Western Railway,7,4475,0.129393,0.088268,0.041125,over,0.088268,4475
+North Central Railway,Western Railway,8,4505,0.11622,0.045505,0.070715,over,0.045505,4505
+North Central Railway,Western Railway,9,4513,0.117592,0.076667,0.040925,over,0.076667,4513
+North Central Railway,Western Railway,10,5017,0.124882,0.077736,0.047146,over,0.077736,5017
+North Central Railway,Western Railway,11,4834,0.135632,0.061026,0.074606,over,0.061026,4834
+North Central Railway,Western Railway,12,4509,0.216402,0.192947,0.023455,over,0.192947,4509
+North Western Railway,Central Railway,1,1572,0.263283,0.131043,0.13224,over,0.131043,1572
+North Western Railway,Central Railway,2,878,0.213233,0.160592,0.052641,over,0.160592,878
+North Western Railway,Central Railway,3,867,0.165044,0.122261,0.042783,over,0.122261,867
+North Western Railway,Central Railway,4,752,0.164724,0.12633,0.038394,over,0.12633,752
+North Western Railway,Central Railway,5,1461,0.188275,0.199179,0.010903,under,0.199179,1461
+North Western Railway,Central Railway,6,1491,0.18691,0.164319,0.022591,over,0.164319,1491
+North Western Railway,Central Railway,7,1329,0.171262,0.084274,0.086989,over,0.084274,1329
+North Western Railway,Central Railway,8,1348,0.16835,0.102374,0.065976,over,0.102374,1348
+North Western Railway,Central Railway,9,1355,0.175905,0.075277,0.100628,over,0.075277,1355
+North Western Railway,Central Railway,10,1532,0.179228,0.14752,0.031708,over,0.14752,1532
+North Western Railway,Central Railway,11,1459,0.205747,0.091844,0.113903,over,0.091844,1459
+North Western Railway,Central Railway,12,1439,0.248177,0.082001,0.166176,over,0.082001,1439
+North Western Railway,Eastern Railway,1,2140,0.257919,0.335047,0.077127,under,0.335047,2140
+North Western Railway,Eastern Railway,2,1784,0.218382,0.465247,0.246865,under,0.465247,1784
+North Western Railway,Eastern Railway,3,2334,0.166248,0.203942,0.037694,under,0.203942,2334
+North Western Railway,Eastern Railway,4,2231,0.167304,0.203496,0.036192,under,0.203496,2231
+North Western Railway,Eastern Railway,5,2334,0.194908,0.263068,0.068159,under,0.263068,2334
+North Western Railway,Eastern Railway,6,2260,0.161564,0.247345,0.085781,under,0.247345,2260
+North Western Railway,Eastern Railway,7,2334,0.127598,0.257926,0.130328,under,0.257926,2334
+North Western Railway,Eastern Railway,8,2469,0.12541,0.238153,0.112743,under,0.238153,2469
+North Western Railway,Eastern Railway,9,2416,0.150231,0.193295,0.043064,under,0.193295,2416
+North Western Railway,Eastern Railway,10,2483,0.181494,0.195731,0.014237,under,0.195731,2483
+North Western Railway,Eastern Railway,11,2417,0.226475,0.364915,0.138441,under,0.364915,2417
+North Western Railway,Eastern Railway,12,2180,0.286843,0.4,0.113157,under,0.4,2180
+North Western Railway,North Central Railway,1,8850,0.149464,0.180226,0.030762,under,0.172497,5774
+North Western Railway,North Central Railway,2,7156,0.12927,0.134572,0.005303,under,0.10634,4984
+North Western Railway,North Central Railway,3,8666,0.087099,0.085045,0.002054,over,0.049415,5727
+North Western Railway,North Central Railway,4,8417,0.071675,0.097778,0.026104,under,0.054151,5577
+North Western Railway,North Central Railway,5,8768,0.091697,0.108577,0.016879,under,0.104467,5753
+North Western Railway,North Central Railway,6,8478,0.075773,0.044586,0.031187,over,0.052991,5567
+North Western Railway,North Central Railway,7,8850,0.066786,0.067006,0.00022,under,0.059168,5814
+North Western Railway,North Central Railway,8,8880,0.060552,0.046847,0.013705,over,0.028981,5866
+North Western Railway,North Central Railway,9,8575,0.077903,0.048746,0.029157,over,0.036551,5636
+North Western Railway,North Central Railway,10,8820,0.084127,0.094444,0.010318,under,0.043807,5821
+North Western Railway,North Central Railway,11,8597,0.092019,0.058392,0.033627,over,0.028169,5680
+North Western Railway,North Central Railway,12,8922,0.139573,0.170365,0.030792,under,0.143126,5855
+North Western Railway,North Western Railway,1,71972,0.066069,0.060301,0.005767,over,0.062114,31056
+North Western Railway,North Western Railway,2,65668,0.046395,0.022461,0.023933,over,0.020276,29542
+North Western Railway,North Western Railway,3,73720,0.030639,0.020876,0.009763,over,0.032037,33399
+North Western Railway,North Western Railway,4,71179,0.03057,0.024642,0.005928,over,0.033074,32563
+North Western Railway,North Western Railway,5,71090,0.039538,0.03791,0.001628,over,0.034908,32056
+North Western Railway,North Western Railway,6,72666,0.037021,0.024908,0.012113,over,0.033461,33263
+North Western Railway,North Western Railway,7,75410,0.036248,0.020143,0.016105,over,0.027469,34985
+North Western Railway,North Western Railway,8,74158,0.032847,0.023706,0.009141,over,0.028609,33451
+North Western Railway,North Western Railway,9,74055,0.032476,0.024482,0.007994,over,0.031391,33927
+North Western Railway,North Western Railway,10,77119,0.034808,0.024274,0.010533,over,0.019088,35624
+North Western Railway,North Western Railway,11,74464,0.039748,0.033573,0.006174,over,0.02556,34312
+North Western Railway,North Western Railway,12,75517,0.062041,0.054253,0.007788,over,0.044044,34102
+North Western Railway,Northern Railway,1,43569,0.110266,0.140054,0.029788,under,0.117497,27771
+North Western Railway,Northern Railway,2,38660,0.089383,0.066115,0.023268,over,0.052048,22902
+North Western Railway,Northern Railway,3,45134,0.062052,0.060619,0.001432,over,0.038977,26811
+North Western Railway,Northern Railway,4,44731,0.053974,0.062663,0.00869,under,0.039437,26270
+North Western Railway,Northern Railway,5,46665,0.067851,0.095939,0.028089,under,0.073837,27344
+North Western Railway,Northern Railway,6,45648,0.062993,0.073212,0.010219,under,0.049001,26775
+North Western Railway,Northern Railway,7,47233,0.061349,0.080727,0.019378,under,0.055463,27712
+North Western Railway,Northern Railway,8,47391,0.056953,0.075879,0.018926,under,0.051482,27738
+North Western Railway,Northern Railway,9,46209,0.060093,0.060941,0.000848,under,0.039733,27131
+North Western Railway,Northern Railway,10,47871,0.060633,0.055462,0.005172,over,0.024208,27098
+North Western Railway,Northern Railway,11,45339,0.0751,0.077262,0.002162,under,0.038289,25438
+North Western Railway,Northern Railway,12,43903,0.105061,0.135116,0.030056,under,0.111887,27912
+North Western Railway,South Western Railway,1,2296,0.103352,0.108885,0.005533,under,0.108363,2224
+North Western Railway,South Western Railway,2,1939,0.077711,0.101083,0.023372,under,0.102839,1867
+North Western Railway,South Western Railway,3,2133,0.054041,0.022972,0.031068,over,0.023005,2043
+North Western Railway,South Western Railway,4,2141,0.063279,0.132648,0.069369,under,0.135814,2069
+North Western Railway,South Western Railway,5,2229,0.079345,0.144908,0.065563,under,0.146036,2157
+North Western Railway,South Western Railway,6,2157,0.072485,0.126101,0.053616,under,0.126754,2067
+North Western Railway,South Western Railway,7,2223,0.069502,0.122357,0.052855,under,0.125058,2151
+North Western Railway,South Western Railway,8,2245,0.057357,0.105568,0.048211,under,0.102623,2173
+North Western Railway,South Western Railway,9,2252,0.068811,0.081705,0.012894,under,0.084181,2162
+North Western Railway,South Western Railway,10,2281,0.07369,0.083735,0.010045,under,0.085106,2209
+North Western Railway,South Western Railway,11,2240,0.093808,0.054911,0.038897,over,0.054889,2168
+North Western Railway,South Western Railway,12,2334,0.114977,0.0994,0.015577,over,0.090018,2244
+North Western Railway,Southern Railway,1,2411,0.109582,0.148071,0.038489,under,0.161365,2169
+North Western Railway,Southern Railway,2,1755,0.086046,0.092877,0.006831,under,0.092702,1521
+North Western Railway,Southern Railway,3,1703,0.062821,0.112155,0.049334,under,0.124913,1433
+North Western Railway,Southern Railway,4,1770,0.063307,0.101695,0.038388,under,0.101449,1518
+North Western Railway,Southern Railway,5,2239,0.094157,0.133095,0.038938,under,0.138017,2007
+North Western Railway,Southern Railway,6,2365,0.076392,0.11797,0.041578,under,0.11074,2095
+North Western Railway,Southern Railway,7,2472,0.068984,0.071602,0.002618,under,0.06982,2220
+North Western Railway,Southern Railway,8,2395,0.06525,0.0881,0.02285,under,0.084142,2163
+North Western Railway,Southern Railway,9,2397,0.075406,0.070505,0.004902,over,0.074283,2127
+North Western Railway,Southern Railway,10,2465,0.086764,0.094118,0.007354,under,0.098057,2213
+North Western Railway,Southern Railway,11,2317,0.132101,0.131636,0.000465,over,0.134772,2085
+North Western Railway,Southern Railway,12,2502,0.169893,0.135891,0.034002,over,0.124943,2209
+North Western Railway,Western Railway,1,19229,0.069446,0.056685,0.01276,over,0.066667,16350
+North Western Railway,Western Railway,2,15830,0.055889,0.030512,0.025377,over,0.03569,13337
+North Western Railway,Western Railway,3,18369,0.040247,0.026077,0.014171,over,0.030514,15501
+North Western Railway,Western Railway,4,18234,0.040158,0.037896,0.002262,over,0.042612,15465
+North Western Railway,Western Railway,5,18878,0.051258,0.066744,0.015487,under,0.07588,15999
+North Western Railway,Western Railway,6,18300,0.049503,0.061366,0.011863,under,0.071373,15524
+North Western Railway,Western Railway,7,18404,0.051963,0.031732,0.020231,over,0.036029,15543
+North Western Railway,Western Railway,8,18536,0.046844,0.030589,0.016255,over,0.035128,15657
+North Western Railway,Western Railway,9,18219,0.04855,0.035183,0.013367,over,0.041489,15450
+North Western Railway,Western Railway,10,19026,0.047254,0.030432,0.016822,over,0.035425,16147
+North Western Railway,Western Railway,11,18153,0.048671,0.037019,0.011652,over,0.043162,15384
+North Western Railway,Western Railway,12,18936,0.074576,0.040927,0.033648,over,0.047578,16079
+Northern Railway,Central Railway,1,8812,0.464621,0.506355,0.041734,under,0.508351,8502
+Northern Railway,Central Railway,2,7364,0.350804,0.26032,0.090484,over,0.268069,7084
+Northern Railway,Central Railway,3,8552,0.28482,0.249415,0.035405,over,0.258675,8242
+Northern Railway,Central Railway,4,8663,0.244093,0.215976,0.028117,over,0.223126,8363
+Northern Railway,Central Railway,5,8956,0.2611,0.233698,0.027402,over,0.24173,8646
+Northern Railway,Central Railway,6,8670,0.266063,0.237832,0.028231,over,0.24552,8370
+Northern Railway,Central Railway,7,8965,0.249847,0.272281,0.022434,under,0.281571,8655
+Northern Railway,Central Railway,8,8979,0.259324,0.366076,0.106753,under,0.376399,8669
+Northern Railway,Central Railway,9,8712,0.251817,0.225666,0.026151,over,0.232882,8412
+Northern Railway,Central Railway,10,9075,0.282966,0.224463,0.058503,over,0.231147,8765
+Northern Railway,Central Railway,11,8693,0.293365,0.203267,0.090098,over,0.210533,8393
+Northern Railway,Central Railway,12,8525,0.438551,0.468856,0.030305,under,0.471698,8215
+Northern Railway,East Central Railway,1,23167,0.440665,0.425303,0.015362,over,0.402655,17926
+Northern Railway,East Central Railway,2,18151,0.352815,0.446091,0.093276,under,0.379955,13799
+Northern Railway,East Central Railway,3,22946,0.296492,0.350475,0.053983,under,0.304047,18040
+Northern Railway,East Central Railway,4,22577,0.265532,0.277052,0.01152,under,0.238007,17760
+Northern Railway,East Central Railway,5,23304,0.296758,0.356763,0.060005,under,0.324798,18356
+Northern Railway,East Central Railway,6,22507,0.290571,0.297996,0.007425,under,0.260536,17725
+Northern Railway,East Central Railway,7,23331,0.224652,0.239595,0.014944,under,0.2079,18379
+Northern Railway,East Central Railway,8,24043,0.24528,0.216071,0.029209,over,0.155837,19052
+Northern Railway,East Central Railway,9,23696,0.243462,0.236453,0.007009,over,0.178492,18802
+Northern Railway,East Central Railway,10,24880,0.316052,0.346463,0.030411,under,0.292111,19674
+Northern Railway,East Central Railway,11,24109,0.36505,0.398275,0.033225,under,0.350738,18980
+Northern Railway,East Central Railway,12,23006,0.458626,0.521951,0.063325,under,0.512025,17796
+Northern Railway,Eastern Railway,1,15300,0.419303,0.429085,0.009782,under,0.494324,11452
+Northern Railway,Eastern Railway,2,12579,0.354413,0.574211,0.219798,under,0.592036,9116
+Northern Railway,Eastern Railway,3,14841,0.260441,0.402466,0.142025,under,0.488988,10988
+Northern Railway,Eastern Railway,4,14880,0.244834,0.255511,0.010676,under,0.295033,11114
+Northern Railway,Eastern Railway,5,15371,0.285137,0.324832,0.039695,under,0.360452,11505
+Northern Railway,Eastern Railway,6,14945,0.288905,0.314353,0.025448,under,0.331397,11189
+Northern Railway,Eastern Railway,7,15426,0.188854,0.206923,0.018069,under,0.227249,11538
+Northern Railway,Eastern Railway,8,15476,0.217182,0.198049,0.019133,over,0.213905,11622
+Northern Railway,Eastern Railway,9,15186,0.215512,0.185697,0.029815,over,0.186,11414
+Northern Railway,Eastern Railway,10,15831,0.262488,0.259807,0.002681,over,0.258303,11924
+Northern Railway,Eastern Railway,11,15247,0.272439,0.309897,0.037458,under,0.338689,11515
+Northern Railway,Eastern Railway,12,15120,0.484489,0.470238,0.014251,over,0.541796,11305
+Northern Railway,North Central Railway,1,22597,0.386649,0.322565,0.064084,over,0.310849,5945
+Northern Railway,North Central Railway,2,18731,0.312883,0.296407,0.016476,over,0.311739,5171
+Northern Railway,North Central Railway,3,21278,0.229934,0.243162,0.013228,under,0.151242,5997
+Northern Railway,North Central Railway,4,23477,0.186296,0.204115,0.017819,under,0.116738,6082
+Northern Railway,North Central Railway,5,25134,0.225815,0.245166,0.019351,under,0.147143,6266
+Northern Railway,North Central Railway,6,24089,0.225018,0.246876,0.021859,under,0.139344,6100
+Northern Railway,North Central Railway,7,25148,0.171047,0.252386,0.081339,under,0.129714,6391
+Northern Railway,North Central Railway,8,25203,0.183281,0.269531,0.086251,under,0.157504,6330
+Northern Railway,North Central Railway,9,24400,0.195798,0.22127,0.025472,under,0.102677,6126
+Northern Railway,North Central Railway,10,25140,0.218074,0.290732,0.072658,under,0.138678,6324
+Northern Railway,North Central Railway,11,24232,0.237383,0.282849,0.045466,under,0.104473,5992
+Northern Railway,North Central Railway,12,23051,0.38131,0.350137,0.031173,over,0.370052,5937
+Northern Railway,North Western Railway,1,43141,0.2057,0.200899,0.004801,over,0.231081,27670
+Northern Railway,North Western Railway,2,38294,0.131514,0.087794,0.04372,over,0.083151,22850
+Northern Railway,North Western Railway,3,44855,0.093268,0.089042,0.004226,over,0.084071,26894
+Northern Railway,North Western Railway,4,44245,0.081057,0.067171,0.013886,over,0.060173,26590
+Northern Railway,North Western Railway,5,45958,0.105099,0.112886,0.007787,under,0.11202,27495
+Northern Railway,North Western Railway,6,44575,0.10467,0.087717,0.016953,over,0.082781,26685
+Northern Railway,North Western Railway,7,46734,0.095122,0.091004,0.004117,over,0.078994,27597
+Northern Railway,North Western Railway,8,47025,0.101487,0.116045,0.014558,under,0.120205,27761
+Northern Railway,North Western Railway,9,45814,0.087188,0.082748,0.00444,over,0.072077,27096
+Northern Railway,North Western Railway,10,47054,0.098605,0.087474,0.011131,over,0.077677,26945
+Northern Railway,North Western Railway,11,44495,0.107897,0.112485,0.004588,under,0.104344,25301
+Northern Railway,North Western Railway,12,43704,0.200171,0.210461,0.010291,under,0.234858,28068
+Northern Railway,Northern Railway,1,217609,0.229968,0.206044,0.023924,over,0.237931,49300
+Northern Railway,Northern Railway,2,186772,0.173413,0.14802,0.025393,over,0.199474,42552
+Northern Railway,Northern Railway,3,231745,0.130045,0.157734,0.027688,under,0.143625,49518
+Northern Railway,Northern Railway,4,238531,0.106746,0.122047,0.015301,under,0.097398,49662
+Northern Railway,Northern Railway,5,246799,0.129337,0.140467,0.01113,under,0.117093,51318
+Northern Railway,Northern Railway,6,239187,0.121784,0.146304,0.02452,under,0.129527,49758
+Northern Railway,Northern Railway,7,248076,0.115571,0.131927,0.016356,under,0.104404,51569
+Northern Railway,Northern Railway,8,247937,0.116165,0.142238,0.026073,under,0.124142,51288
+Northern Railway,Northern Railway,9,240811,0.115158,0.12318,0.008022,under,0.096584,49946
+Northern Railway,Northern Railway,10,242744,0.121599,0.135266,0.013667,under,0.107237,50300
+Northern Railway,Northern Railway,11,229528,0.140178,0.150823,0.010645,under,0.117888,49157
+Northern Railway,Northern Railway,12,214259,0.241123,0.235915,0.005208,over,0.267579,49376
+Northern Railway,South Western Railway,1,4175,0.275995,0.401198,0.125202,under,0.405545,3679
+Northern Railway,South Western Railway,2,3703,0.167701,0.214691,0.04699,under,0.208602,3255
+Northern Railway,South Western Railway,3,4174,0.12957,0.132966,0.003396,under,0.136487,3678
+Northern Railway,South Western Railway,4,3982,0.12518,0.147162,0.021982,under,0.139634,3502
+Northern Railway,South Western Railway,5,4232,0.154995,0.202505,0.047509,under,0.195931,3736
+Northern Railway,South Western Railway,6,4019,0.161476,0.220453,0.058976,under,0.215032,3539
+Northern Railway,South Western Railway,7,4186,0.132863,0.140229,0.007367,under,0.126287,3690
+Northern Railway,South Western Railway,8,4159,0.134844,0.093532,0.041312,over,0.09282,3663
+Northern Railway,South Western Railway,9,4025,0.1337,0.160497,0.026797,under,0.165303,3545
+Northern Railway,South Western Railway,10,4186,0.145537,0.162446,0.016909,under,0.163686,3690
+Northern Railway,South Western Railway,11,4018,0.1497,0.166003,0.016303,under,0.179197,3538
+Northern Railway,South Western Railway,12,3993,0.275864,0.324818,0.048955,under,0.324278,3497
+Northern Railway,Southern Railway,1,8457,0.289324,0.366797,0.077473,under,0.377993,7852
+Northern Railway,Southern Railway,2,7542,0.17519,0.221161,0.045971,under,0.226941,6993
+Northern Railway,Southern Railway,3,8322,0.136798,0.168589,0.031792,under,0.175844,7700
+Northern Railway,Southern Railway,4,8047,0.12384,0.130111,0.006271,under,0.137426,7444
+Northern Railway,Southern Railway,5,8379,0.179264,0.223177,0.043913,under,0.226039,7773
+Northern Railway,Southern Railway,6,8056,0.16794,0.218967,0.051027,under,0.223649,7476
+Northern Railway,Southern Railway,7,8263,0.130483,0.166525,0.036042,under,0.166775,7663
+Northern Railway,Southern Railway,8,8357,0.142641,0.147421,0.00478,under,0.143762,7735
+Northern Railway,Southern Railway,9,8135,0.144603,0.145544,0.000941,under,0.145069,7555
+Northern Railway,Southern Railway,10,8383,0.168427,0.139568,0.028859,over,0.144213,7794
+Northern Railway,Southern Railway,11,8015,0.217877,0.191765,0.026112,over,0.182629,7403
+Northern Railway,Southern Railway,12,8315,0.372068,0.398076,0.026007,under,0.412414,7701
+Northern Railway,Western Railway,1,20280,0.261982,0.277465,0.015483,under,0.297861,18794
+Northern Railway,Western Railway,2,17499,0.155116,0.149323,0.005793,over,0.160481,16220
+Northern Railway,Western Railway,3,19050,0.124877,0.109711,0.015166,over,0.118034,17656
+Northern Railway,Western Railway,4,19209,0.104432,0.119215,0.014783,under,0.12768,17865
+Northern Railway,Western Railway,5,19949,0.127367,0.120257,0.00711,over,0.12568,18555
+Northern Railway,Western Railway,6,19381,0.127629,0.098137,0.029492,over,0.104729,18037
+Northern Railway,Western Railway,7,20243,0.126687,0.136096,0.009409,under,0.144587,18833
+Northern Railway,Western Railway,8,20268,0.121928,0.160598,0.03867,under,0.170141,18855
+Northern Railway,Western Railway,9,19785,0.121432,0.132828,0.011396,under,0.141109,18383
+Northern Railway,Western Railway,10,20223,0.124745,0.149978,0.025233,under,0.160592,18793
+Northern Railway,Western Railway,11,19732,0.141354,0.13734,0.004013,over,0.14626,18344
+Northern Railway,Western Railway,12,20283,0.226304,0.26929,0.042985,under,0.286806,18849
+South Western Railway,Central Railway,1,12057,0.098761,0.048022,0.050739,over,0.067536,7359
+South Western Railway,Central Railway,2,8651,0.072817,0.050283,0.022534,over,0.059291,5785
+South Western Railway,Central Railway,3,9816,0.061654,0.040546,0.021108,over,0.052314,6136
+South Western Railway,Central Railway,4,9506,0.072699,0.065327,0.007371,over,0.072107,5894
+South Western Railway,Central Railway,5,9782,0.085387,0.051728,0.033659,over,0.064037,6059
+South Western Railway,Central Railway,6,9548,0.073773,0.058965,0.014808,over,0.067558,5906
+South Western Railway,Central Railway,7,9883,0.072662,0.043206,0.029457,over,0.059767,6107
+South Western Railway,Central Railway,8,9933,0.069158,0.034129,0.035029,over,0.052131,6100
+South Western Railway,Central Railway,9,9704,0.067891,0.030194,0.037697,over,0.045042,5950
+South Western Railway,Central Railway,10,10715,0.06959,0.027905,0.041685,over,0.041427,6252
+South Western Railway,Central Railway,11,10795,0.071671,0.024826,0.046845,over,0.03777,6010
+South Western Railway,Central Railway,12,11539,0.070568,0.043331,0.027237,over,0.063458,6587
+South Western Railway,East Central Railway,1,1859,0.345655,0.203873,0.141782,over,0.201413,1698
+South Western Railway,East Central Railway,2,1558,0.340604,0.362644,0.022041,under,0.375431,1449
+South Western Railway,East Central Railway,3,1752,0.30955,0.235731,0.073819,over,0.228737,1552
+South Western Railway,East Central Railway,4,1673,0.305086,0.224148,0.080938,over,0.205552,1513
+South Western Railway,East Central Railway,5,1757,0.246985,0.282299,0.035314,under,0.289919,1597
+South Western Railway,East Central Railway,6,1718,0.267647,0.307334,0.039687,under,0.294466,1518
+South Western Railway,East Central Railway,7,1742,0.262744,0.221584,0.04116,over,0.2067,1582
+South Western Railway,East Central Railway,8,1760,0.243504,0.185227,0.058276,over,0.179455,1577
+South Western Railway,East Central Railway,9,1788,0.241515,0.222595,0.01892,over,0.212291,1611
+South Western Railway,East Central Railway,10,1869,0.242723,0.23649,0.006233,over,0.236385,1726
+South Western Railway,East Central Railway,11,1779,0.289873,0.258572,0.0313,over,0.24812,1596
+South Western Railway,East Central Railway,12,1868,0.347441,0.225375,0.122067,over,0.211118,1691
+South Western Railway,Eastern Railway,1,2004,0.436174,0.237026,0.199148,over,0.23153,1719
+South Western Railway,Eastern Railway,2,1772,0.415395,0.633747,0.218353,under,0.670543,1548
+South Western Railway,Eastern Railway,3,1939,0.400716,0.593605,0.192889,under,0.619242,1715
+South Western Railway,Eastern Railway,4,1885,0.406701,0.407958,0.001256,under,0.40879,1661
+South Western Railway,Eastern Railway,5,1981,0.339123,0.50732,0.168196,under,0.55438,1701
+South Western Railway,Eastern Railway,6,1879,0.337345,0.32198,0.015365,over,0.317825,1655
+South Western Railway,Eastern Railway,7,1943,0.331744,0.389089,0.057345,under,0.402941,1700
+South Western Railway,Eastern Railway,8,2009,0.309572,0.280737,0.028835,over,0.303776,1748
+South Western Railway,Eastern Railway,9,1886,0.307263,0.327678,0.020415,under,0.342978,1659
+South Western Railway,Eastern Railway,10,1981,0.308666,0.34629,0.037624,under,0.346108,1696
+South Western Railway,Eastern Railway,11,1928,0.350332,0.30083,0.049502,over,0.297647,1700
+South Western Railway,Eastern Railway,12,1928,0.407159,0.350104,0.057055,over,0.356471,1700
+South Western Railway,North Western Railway,1,2368,0.079234,0.083193,0.003959,under,0.085601,2278
+South Western Railway,North Western Railway,2,1929,0.061487,0.097978,0.036491,under,0.101402,1854
+South Western Railway,North Western Railway,3,2058,0.051964,0.045675,0.006289,over,0.046418,1982
+South Western Railway,North Western Railway,4,2107,0.061587,0.135738,0.074151,under,0.137863,2031
+South Western Railway,North Western Railway,5,2310,0.076909,0.198268,0.121359,under,0.204966,2215
+South Western Railway,North Western Railway,6,2079,0.064214,0.107263,0.043049,under,0.110834,2003
+South Western Railway,North Western Railway,7,2241,0.062941,0.121821,0.058879,under,0.117428,2146
+South Western Railway,North Western Railway,8,2253,0.059464,0.134487,0.075023,under,0.139182,2177
+South Western Railway,North Western Railway,9,2189,0.053923,0.119689,0.065767,under,0.122575,2113
+South Western Railway,North Western Railway,10,2320,0.071649,0.08319,0.01154,under,0.086742,2225
+South Western Railway,North Western Railway,11,2221,0.067257,0.082846,0.015588,under,0.085781,2145
+South Western Railway,North Western Railway,12,2242,0.076012,0.075825,0.000187,over,0.078486,2166
+South Western Railway,Northern Railway,1,4179,0.11134,0.109356,0.001983,over,0.112408,3683
+South Western Railway,Northern Railway,2,3734,0.10085,0.133905,0.033055,under,0.142118,3286
+South Western Railway,Northern Railway,3,4184,0.088714,0.113289,0.024574,under,0.128525,3688
+South Western Railway,Northern Railway,4,4069,0.089712,0.130007,0.040296,under,0.140708,3589
+South Western Railway,Northern Railway,5,4204,0.103704,0.106803,0.003099,under,0.108414,3708
+South Western Railway,Northern Railway,6,4064,0.095786,0.119587,0.023801,under,0.121373,3584
+South Western Railway,Northern Railway,7,4201,0.084504,0.077363,0.007142,over,0.080702,3705
+South Western Railway,Northern Railway,8,4179,0.078588,0.048576,0.030012,over,0.053489,3683
+South Western Railway,Northern Railway,9,4099,0.076372,0.07392,0.002451,over,0.080685,3619
+South Western Railway,Northern Railway,10,4234,0.081517,0.056212,0.025306,over,0.06153,3738
+South Western Railway,Northern Railway,11,4000,0.092751,0.11025,0.017499,under,0.125284,3520
+South Western Railway,Northern Railway,12,4080,0.118319,0.168873,0.050554,under,0.178013,3584
+South Western Railway,South Western Railway,1,94615,0.050404,0.038112,0.012292,over,0.052178,41339
+South Western Railway,South Western Railway,2,81754,0.043649,0.029895,0.013755,over,0.038382,33766
+South Western Railway,South Western Railway,3,88801,0.038323,0.020585,0.017738,over,0.031375,35633
+South Western Railway,South Western Railway,4,87854,0.045123,0.034,0.011123,over,0.047117,35168
+South Western Railway,South Western Railway,5,91792,0.047102,0.038762,0.00834,over,0.058734,36980
+South Western Railway,South Western Railway,6,88980,0.046882,0.033895,0.012986,over,0.048929,36338
+South Western Railway,South Western Railway,7,93102,0.050272,0.048012,0.00226,over,0.066181,38289
+South Western Railway,South Western Railway,8,93522,0.041302,0.027459,0.013843,over,0.041055,38729
+South Western Railway,South Western Railway,9,91717,0.040875,0.025459,0.015417,over,0.033644,38224
+South Western Railway,South Western Railway,10,93519,0.040764,0.016424,0.02434,over,0.021401,39344
+South Western Railway,South Western Railway,11,89176,0.040717,0.025949,0.014768,over,0.024017,38056
+South Western Railway,South Western Railway,12,93866,0.042787,0.030682,0.012105,over,0.036414,40726
+South Western Railway,Southern Railway,1,17479,0.046477,0.054809,0.008331,under,0.058389,14352
+South Western Railway,Southern Railway,2,14615,0.041441,0.050291,0.00885,under,0.051549,12202
+South Western Railway,Southern Railway,3,15700,0.038127,0.025541,0.012586,over,0.026589,13201
+South Western Railway,Southern Railway,4,15679,0.040017,0.027935,0.012082,over,0.031161,13061
+South Western Railway,Southern Railway,5,16419,0.04526,0.045252,8e-06,over,0.046222,13565
+South Western Railway,Southern Railway,6,15872,0.041971,0.030305,0.011666,over,0.033837,13092
+South Western Railway,Southern Railway,7,16353,0.041119,0.040482,0.000637,over,0.043266,13521
+South Western Railway,Southern Railway,8,16580,0.038937,0.039566,0.000629,under,0.044983,13694
+South Western Railway,Southern Railway,9,16973,0.038533,0.036646,0.001887,over,0.040597,14213
+South Western Railway,Southern Railway,10,17494,0.041006,0.049045,0.008039,under,0.055119,14641
+South Western Railway,Southern Railway,11,17033,0.049056,0.077144,0.028088,under,0.086552,14084
+South Western Railway,Southern Railway,12,17340,0.051595,0.069954,0.018359,under,0.077576,14257
+Southern Railway,Central Railway,1,11634,0.130645,0.162713,0.032068,under,0.16331,11420
+Southern Railway,Central Railway,2,10374,0.099783,0.116831,0.017047,under,0.116284,10182
+Southern Railway,Central Railway,3,11327,0.087604,0.076013,0.011591,over,0.075574,11115
+Southern Railway,Central Railway,4,11048,0.093787,0.070329,0.023457,over,0.069731,10856
+Southern Railway,Central Railway,5,11346,0.120304,0.110347,0.009957,over,0.108625,11130
+Southern Railway,Central Railway,6,11075,0.103882,0.105553,0.001671,under,0.103785,10859
+Southern Railway,Central Railway,7,11444,0.102958,0.118752,0.015794,under,0.120591,11228
+Southern Railway,Central Railway,8,11388,0.096682,0.102388,0.005707,under,0.102399,11172
+Southern Railway,Central Railway,9,11318,0.094963,0.132797,0.037835,under,0.133831,11126
+Southern Railway,Central Railway,10,11743,0.096153,0.115643,0.01949,under,0.116943,11527
+Southern Railway,Central Railway,11,11243,0.105408,0.111447,0.006039,under,0.111272,11027
+Southern Railway,Central Railway,12,11698,0.116393,0.12609,0.009697,under,0.126456,11506
+Southern Railway,East Central Railway,1,3678,0.381062,0.313214,0.067849,over,0.313214,3678
+Southern Railway,East Central Railway,2,3237,0.375267,0.348162,0.027105,over,0.348162,3237
+Southern Railway,East Central Railway,3,3600,0.350568,0.368889,0.018321,under,0.368889,3600
+Southern Railway,East Central Railway,4,3513,0.334088,0.372047,0.037959,under,0.372047,3513
+Southern Railway,East Central Railway,5,3629,0.278733,0.36539,0.086657,under,0.36539,3629
+Southern Railway,East Central Railway,6,3492,0.304282,0.294387,0.009895,over,0.294387,3492
+Southern Railway,East Central Railway,7,3601,0.31692,0.321855,0.004935,under,0.321855,3601
+Southern Railway,East Central Railway,8,3665,0.28269,0.331241,0.048552,under,0.331241,3665
+Southern Railway,East Central Railway,9,3633,0.2805,0.324525,0.044026,under,0.324525,3633
+Southern Railway,East Central Railway,10,3614,0.279825,0.311566,0.031741,under,0.311566,3614
+Southern Railway,East Central Railway,11,3560,0.339986,0.372472,0.032486,under,0.372472,3560
+Southern Railway,East Central Railway,12,3717,0.420172,0.39279,0.027382,over,0.39279,3717
+Southern Railway,Eastern Railway,1,2245,0.468032,0.217372,0.25066,over,0.217372,2245
+Southern Railway,Eastern Railway,2,1995,0.454061,0.573434,0.119373,under,0.573434,1995
+Southern Railway,Eastern Railway,3,2223,0.439967,0.4296,0.010367,over,0.4296,2223
+Southern Railway,Eastern Railway,4,2162,0.434288,0.402405,0.031883,over,0.402405,2162
+Southern Railway,Eastern Railway,5,2259,0.371054,0.496237,0.125183,under,0.496237,2259
+Southern Railway,Eastern Railway,6,2118,0.372843,0.379131,0.006288,under,0.379131,2118
+Southern Railway,Eastern Railway,7,2215,0.386746,0.43386,0.047114,under,0.43386,2215
+Southern Railway,Eastern Railway,8,2261,0.348825,0.377709,0.028884,under,0.377709,2261
+Southern Railway,Eastern Railway,9,2147,0.34637,0.427108,0.080737,under,0.427108,2147
+Southern Railway,Eastern Railway,10,2219,0.345614,0.363677,0.018064,under,0.363677,2219
+Southern Railway,Eastern Railway,11,2183,0.364554,0.261109,0.103445,over,0.261109,2183
+Southern Railway,Eastern Railway,12,2207,0.34879,0.368373,0.019583,under,0.368373,2207
+Southern Railway,North Western Railway,1,2558,0.089143,0.095778,0.006635,under,0.094457,2255
+Southern Railway,North Western Railway,2,1791,0.071224,0.121161,0.049937,under,0.129427,1553
+Southern Railway,North Western Railway,3,1823,0.062289,0.072408,0.010119,under,0.077905,1566
+Southern Railway,North Western Railway,4,1725,0.063409,0.073043,0.009635,under,0.07589,1489
+Southern Railway,North Western Railway,5,2585,0.087416,0.099033,0.011617,under,0.104367,2290
+Southern Railway,North Western Railway,6,2495,0.070511,0.148297,0.077785,under,0.137229,2259
+Southern Railway,North Western Railway,7,2355,0.069905,0.090446,0.020541,under,0.094384,2119
+Southern Railway,North Western Railway,8,2703,0.069218,0.079171,0.009954,under,0.084718,2408
+Southern Railway,North Western Railway,9,2382,0.062995,0.076826,0.013831,under,0.077819,2146
+Southern Railway,North Western Railway,10,2514,0.080041,0.101432,0.021391,under,0.090179,2240
+Southern Railway,North Western Railway,11,2620,0.092321,0.075573,0.016749,over,0.076598,2363
+Southern Railway,North Western Railway,12,2524,0.11709,0.099445,0.017644,over,0.105424,2286
+Southern Railway,Northern Railway,1,8571,0.132107,0.173725,0.041619,under,0.178504,7955
+Southern Railway,Northern Railway,2,7746,0.112907,0.158275,0.045369,under,0.165277,7194
+Southern Railway,Northern Railway,3,8503,0.102638,0.116312,0.013674,under,0.12221,7929
+Southern Railway,Northern Railway,4,8377,0.099015,0.098484,0.000531,over,0.104551,7757
+Southern Railway,Northern Railway,5,8532,0.123239,0.163619,0.040381,under,0.170374,7912
+Southern Railway,Northern Railway,6,8308,0.132132,0.164781,0.032649,under,0.169916,7745
+Southern Railway,Northern Railway,7,8619,0.096091,0.124028,0.027938,under,0.132172,7982
+Southern Railway,Northern Railway,8,8609,0.09141,0.103264,0.011854,under,0.102449,8004
+Southern Railway,Northern Railway,9,8248,0.088637,0.108996,0.020359,under,0.11609,7632
+Southern Railway,Northern Railway,10,8675,0.094768,0.094755,1.3e-05,over,0.099368,8071
+Southern Railway,Northern Railway,11,8340,0.113962,0.096643,0.01732,over,0.102498,7766
+Southern Railway,Northern Railway,12,8644,0.173515,0.204535,0.03102,under,0.214304,8026
+Southern Railway,South Western Railway,1,17373,0.053143,0.046854,0.006288,over,0.055329,14242
+Southern Railway,South Western Railway,2,14636,0.047319,0.04079,0.006529,over,0.045863,12232
+Southern Railway,South Western Railway,3,15667,0.042971,0.040914,0.002057,over,0.046752,13176
+Southern Railway,South Western Railway,4,15555,0.046895,0.037608,0.009287,over,0.044419,12945
+Southern Railway,South Western Railway,5,16294,0.050185,0.059715,0.00953,under,0.067406,13441
+Southern Railway,South Western Railway,6,15787,0.049951,0.040856,0.009095,over,0.04774,13029
+Southern Railway,South Western Railway,7,16215,0.055222,0.058526,0.003304,under,0.067557,13396
+Southern Railway,South Western Railway,8,16460,0.044993,0.045747,0.000754,under,0.053909,13597
+Southern Railway,South Western Railway,9,16814,0.04453,0.043654,0.000876,over,0.049993,14062
+Southern Railway,South Western Railway,10,17359,0.044651,0.05536,0.01071,under,0.064776,14496
+Southern Railway,South Western Railway,11,16868,0.04197,0.052763,0.010792,under,0.059439,13947
+Southern Railway,South Western Railway,12,17188,0.046387,0.048406,0.002018,under,0.058536,14094
+Southern Railway,Southern Railway,1,237298,0.029351,0.018572,0.01078,over,0.021185,114324
+Southern Railway,Southern Railway,2,212625,0.025868,0.016771,0.009097,over,0.016864,99737
+Southern Railway,Southern Railway,3,233689,0.024454,0.012012,0.012443,over,0.012157,108825
+Southern Railway,Southern Railway,4,231749,0.024409,0.013092,0.011317,over,0.015829,107651
+Southern Railway,Southern Railway,5,240274,0.02821,0.025046,0.003164,over,0.034268,111561
+Southern Railway,Southern Railway,6,231257,0.026126,0.016497,0.009629,over,0.021327,107001
+Southern Railway,Southern Railway,7,239361,0.024618,0.019009,0.005609,over,0.020653,110879
+Southern Railway,Southern Railway,8,242251,0.023213,0.014704,0.008509,over,0.017181,113150
+Southern Railway,Southern Railway,9,235496,0.022968,0.013873,0.009096,over,0.016832,110086
+Southern Railway,Southern Railway,10,243575,0.024603,0.01524,0.009364,over,0.016164,114203
+Southern Railway,Southern Railway,11,235433,0.023763,0.017797,0.005966,over,0.019592,110759
+Southern Railway,Southern Railway,12,243201,0.0232,0.015954,0.007246,over,0.015839,113580
+Southern Railway,Western Railway,1,4597,0.048966,0.125952,0.076986,under,0.125819,4427
+Southern Railway,Western Railway,2,3849,0.042651,0.145492,0.102841,under,0.146717,3701
+Southern Railway,Western Railway,3,4548,0.040162,0.113676,0.073514,under,0.117045,4400
+Southern Railway,Western Railway,4,4317,0.042834,0.097521,0.054688,under,0.100867,4154
+Southern Railway,Western Railway,5,4599,0.08329,0.149598,0.066308,under,0.151276,4429
+Southern Railway,Western Railway,6,4485,0.049481,0.119732,0.070251,under,0.123588,4337
+Southern Railway,Western Railway,7,4524,0.070231,0.118258,0.048028,under,0.1233,4339
+Southern Railway,Western Railway,8,4645,0.043977,0.096878,0.052902,under,0.099622,4497
+Southern Railway,Western Railway,9,4475,0.043524,0.106592,0.063068,under,0.105385,4327
+Southern Railway,Western Railway,10,4673,0.049584,0.07982,0.030236,under,0.081105,4488
+Southern Railway,Western Railway,11,4429,0.083406,0.087379,0.003973,under,0.088064,4281
+Southern Railway,Western Railway,12,4613,0.065786,0.089746,0.023961,under,0.092809,4450
+Western Railway,Central Railway,1,8361,0.062931,0.034206,0.028724,over,0.01904,5042
+Western Railway,Central Railway,2,7536,0.056028,0.036757,0.019271,over,0.02346,4561
+Western Railway,Central Railway,3,8354,0.04607,0.03232,0.01375,over,0.012795,5080
+Western Railway,Central Railway,4,8068,0.045968,0.018592,0.027376,over,0.020279,4882
+Western Railway,Central Railway,5,8328,0.052837,0.042507,0.01033,over,0.047073,5056
+Western Railway,Central Railway,6,8099,0.056404,0.038523,0.01788,over,0.039375,4927
+Western Railway,Central Railway,7,8369,0.045886,0.016011,0.029874,over,0.015767,5074
+Western Railway,Central Railway,8,8287,0.053317,0.030771,0.022546,over,0.025733,5013
+Western Railway,Central Railway,9,8172,0.052324,0.017988,0.034336,over,0.011497,4958
+Western Railway,Central Railway,10,8490,0.050874,0.012839,0.038036,over,0.00639,5164
+Western Railway,Central Railway,11,8218,0.047557,0.013872,0.033685,over,0.013538,5023
+Western Railway,Central Railway,12,8445,0.049322,0.025577,0.023744,over,0.018168,5119
+Western Railway,East Central Railway,1,6235,0.151046,0.184924,0.033878,under,0.181162,6094
+Western Railway,East Central Railway,2,5212,0.161529,0.178051,0.016521,under,0.174814,5114
+Western Railway,East Central Railway,3,5961,0.139877,0.129508,0.010369,over,0.129319,5846
+Western Railway,East Central Railway,4,5803,0.132459,0.141996,0.009537,under,0.140793,5675
+Western Railway,East Central Railway,5,6038,0.150505,0.162305,0.011801,under,0.160305,5895
+Western Railway,East Central Railway,6,5826,0.119216,0.134569,0.015353,under,0.13554,5681
+Western Railway,East Central Railway,7,5928,0.097429,0.09025,0.007179,over,0.087069,5800
+Western Railway,East Central Railway,8,6195,0.107473,0.101533,0.00594,over,0.101408,6035
+Western Railway,East Central Railway,9,5928,0.106439,0.087213,0.019226,over,0.085862,5800
+Western Railway,East Central Railway,10,6306,0.126912,0.171107,0.044194,under,0.167289,6163
+Western Railway,East Central Railway,11,6078,0.132562,0.151695,0.019133,under,0.149621,5935
+Western Railway,East Central Railway,12,6189,0.168539,0.265309,0.096771,under,0.264953,6069
+Western Railway,Eastern Railway,1,3546,0.197741,0.184715,0.013026,over,0.169994,3206
+Western Railway,Eastern Railway,2,2819,0.200442,0.270309,0.069866,under,0.27235,2651
+Western Railway,Eastern Railway,3,3355,0.186623,0.180924,0.005699,over,0.177996,3163
+Western Railway,Eastern Railway,4,3379,0.187779,0.116603,0.071176,over,0.12488,3115
+Western Railway,Eastern Railway,5,3501,0.231752,0.194801,0.03695,over,0.190792,3171
+Western Railway,Eastern Railway,6,3274,0.151361,0.175015,0.023655,under,0.1701,3010
+Western Railway,Eastern Railway,7,3509,0.12453,0.143061,0.018531,under,0.138414,3215
+Western Railway,Eastern Railway,8,3446,0.136945,0.125363,0.011582,over,0.110617,3146
+Western Railway,Eastern Railway,9,3398,0.13567,0.155974,0.020304,under,0.141259,3129
+Western Railway,Eastern Railway,10,3477,0.160754,0.140926,0.019828,over,0.122091,3137
+Western Railway,Eastern Railway,11,3384,0.214232,0.17169,0.042542,over,0.160668,3112
+Western Railway,Eastern Railway,12,3517,0.191502,0.282343,0.090841,under,0.274268,3245
+Western Railway,North Central Railway,1,4306,0.105911,0.068509,0.037402,over,0.068509,4306
+Western Railway,North Central Railway,2,3771,0.114039,0.091753,0.022286,over,0.091753,3771
+Western Railway,North Central Railway,3,4354,0.095909,0.044327,0.051582,over,0.044327,4354
+Western Railway,North Central Railway,4,4800,0.080119,0.063125,0.016994,over,0.063125,4800
+Western Railway,North Central Railway,5,4948,0.096673,0.078416,0.018257,over,0.078416,4948
+Western Railway,North Central Railway,6,4762,0.076873,0.066989,0.009884,over,0.066989,4762
+Western Railway,North Central Railway,7,4523,0.063015,0.061021,0.001994,over,0.061021,4523
+Western Railway,North Central Railway,8,4462,0.069386,0.039668,0.029718,over,0.039668,4462
+Western Railway,North Central Railway,9,4475,0.069087,0.039553,0.029534,over,0.039553,4475
+Western Railway,North Central Railway,10,4987,0.077164,0.037698,0.039466,over,0.037698,4987
+Western Railway,North Central Railway,11,4795,0.084797,0.041919,0.042878,over,0.041919,4795
+Western Railway,North Central Railway,12,4507,0.115415,0.142223,0.026808,under,0.142223,4507
+Western Railway,North Western Railway,1,19247,0.051502,0.027952,0.023549,over,0.029814,16368
+Western Railway,North Western Railway,2,15841,0.041717,0.013825,0.027892,over,0.015367,13340
+Western Railway,North Western Railway,3,18402,0.034211,0.027388,0.006822,over,0.031866,15534
+Western Railway,North Western Railway,4,18179,0.034134,0.025249,0.008885,over,0.029461,15410
+Western Railway,North Western Railway,5,18870,0.043411,0.048808,0.005396,under,0.056282,15991
+Western Railway,North Western Railway,6,18374,0.042675,0.043594,0.000919,under,0.049814,15598
+Western Railway,North Western Railway,7,18397,0.034979,0.027233,0.007747,over,0.025572,15525
+Western Railway,North Western Railway,8,18528,0.040434,0.042476,0.002042,under,0.044061,15660
+Western Railway,North Western Railway,9,18300,0.036597,0.024863,0.011734,over,0.026978,15531
+Western Railway,North Western Railway,10,19008,0.039016,0.027146,0.011869,over,0.024924,16129
+Western Railway,North Western Railway,11,18121,0.03653,0.023785,0.012746,over,0.023248,15356
+Western Railway,North Western Railway,12,18958,0.05285,0.023262,0.029588,over,0.021794,16105
+Western Railway,Northern Railway,1,20419,0.090956,0.134434,0.043477,under,0.142503,18947
+Western Railway,Northern Railway,2,17623,0.075756,0.09272,0.016964,under,0.099119,16344
+Western Railway,Northern Railway,3,18969,0.064714,0.060994,0.00372,over,0.065473,17595
+Western Railway,Northern Railway,4,19258,0.057083,0.061066,0.003982,under,0.065217,17894
+Western Railway,Northern Railway,5,20143,0.067669,0.075212,0.007543,under,0.07878,18761
+Western Railway,Northern Railway,6,19509,0.070359,0.072172,0.001813,under,0.077147,18173
+Western Railway,Northern Railway,7,20299,0.05622,0.058821,0.002601,under,0.062603,18881
+Western Railway,Northern Railway,8,20371,0.05884,0.069069,0.010229,under,0.072205,18946
+Western Railway,Northern Railway,9,19845,0.057146,0.04772,0.009426,over,0.049688,18455
+Western Railway,Northern Railway,10,20534,0.061001,0.076166,0.015166,under,0.080509,19091
+Western Railway,Northern Railway,11,19770,0.064552,0.050481,0.014071,over,0.05392,18379
+Western Railway,Northern Railway,12,20373,0.090997,0.138615,0.047617,under,0.147199,18920
+Western Railway,Southern Railway,1,4646,0.054649,0.179724,0.125075,under,0.178809,4502
+Western Railway,Southern Railway,2,3875,0.046138,0.173419,0.127281,under,0.174531,3730
+Western Railway,Southern Railway,3,4608,0.042466,0.12066,0.078193,under,0.117435,4428
+Western Railway,Southern Railway,4,4440,0.042802,0.148423,0.105621,under,0.153399,4296
+Western Railway,Southern Railway,5,4674,0.13228,0.217801,0.08552,under,0.21766,4530
+Western Railway,Southern Railway,6,4476,0.046489,0.182082,0.135593,under,0.188315,4296
+Western Railway,Southern Railway,7,4612,0.088745,0.136383,0.047638,under,0.139212,4468
+Western Railway,Southern Railway,8,4604,0.041514,0.188097,0.146583,under,0.187668,4460
+Western Railway,Southern Railway,9,4522,0.041086,0.137771,0.096685,under,0.137725,4342
+Western Railway,Southern Railway,10,4652,0.082042,0.126612,0.04457,under,0.126442,4508
+Western Railway,Southern Railway,11,4492,0.152101,0.163847,0.011746,under,0.169043,4348
+Western Railway,Southern Railway,12,4611,0.063329,0.158534,0.095205,under,0.162717,4431
+Western Railway,Western Railway,1,153036,0.022956,0.01631,0.006646,over,0.020416,57161
+Western Railway,Western Railway,2,138580,0.022811,0.011192,0.011619,over,0.012707,50602
+Western Railway,Western Railway,3,153773,0.020851,0.010223,0.010628,over,0.014442,55877
+Western Railway,Western Railway,4,151003,0.020804,0.009271,0.011533,over,0.01374,55240
+Western Railway,Western Railway,5,156878,0.025195,0.019996,0.005198,over,0.032936,58082
+Western Railway,Western Railway,6,152841,0.027306,0.018483,0.008823,over,0.03393,57000
+Western Railway,Western Railway,7,157498,0.019934,0.008311,0.011623,over,0.008006,58208
+Western Railway,Western Railway,8,159091,0.024273,0.018951,0.005321,over,0.031714,58776
+Western Railway,Western Railway,9,154639,0.024018,0.010812,0.013205,over,0.019001,57050
+Western Railway,Western Railway,10,158554,0.023597,0.01281,0.010787,over,0.011029,58481
+Western Railway,Western Railway,11,154141,0.020793,0.014779,0.006015,over,0.015754,56495
+Western Railway,Western Railway,12,157655,0.023082,0.013929,0.009153,over,0.014007,58542

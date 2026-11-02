@@ -1,0 +1,17 @@
+{
+  "training_date": "2026-08-25T19:51:53.404394+00:00",
+  "n_samples": 974981,
+  "n_features": 6,
+  "accuracy": 0.8783,
+  "f1": 0.046,
+  "roc_auc": 0.7782,
+  "base_rate_positive": 0.1231,
+  "feature_importances": {
+    "origin_zone": 0.607181,
+    "dest_zone": 0.289649,
+    "month": 0.040966,
+    "train_category": 0.02704,
+    "weather_severity_origin": 0.019219,
+    "weather_severity_dest": 0.015945
+  }
+}
